@@ -1,0 +1,181 @@
+{
+  "startUrl": "https://aifordjsglobal.com/",
+  "fetchedAt": "2026-08-13T03:09:44.981Z",
+  "pages": [
+    {
+      "url": "https://aifordjsglobal.com/",
+      "finalUrl": "https://aifordjsglobal.com/",
+      "path": "index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/playbook",
+      "finalUrl": "https://aifordjsglobal.com/playbook",
+      "path": "playbook/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/analyzer",
+      "finalUrl": "https://aifordjsglobal.com/analyzer",
+      "path": "analyzer/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/chat",
+      "finalUrl": "https://aifordjsglobal.com/chat",
+      "path": "chat/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/contract",
+      "finalUrl": "https://aifordjsglobal.com/contract",
+      "path": "contract/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/event-brief",
+      "finalUrl": "https://aifordjsglobal.com/event-brief",
+      "path": "event-brief/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/prompts",
+      "finalUrl": "https://aifordjsglobal.com/prompts",
+      "path": "prompts/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/tools",
+      "finalUrl": "https://aifordjsglobal.com/tools",
+      "path": "tools/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/lineage",
+      "finalUrl": "https://aifordjsglobal.com/lineage",
+      "path": "lineage/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/schools",
+      "finalUrl": "https://aifordjsglobal.com/schools",
+      "path": "schools/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/equipment",
+      "finalUrl": "https://aifordjsglobal.com/equipment",
+      "path": "equipment/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/blog",
+      "finalUrl": "https://aifordjsglobal.com/blog",
+      "path": "blog/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/pricing",
+      "finalUrl": "https://aifordjsglobal.com/pricing",
+      "path": "pricing/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/directory",
+      "finalUrl": "https://aifordjsglobal.com/directory",
+      "path": "directory/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/merch",
+      "finalUrl": "https://aifordjsglobal.com/merch",
+      "path": "merch/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    },
+    {
+      "url": "https://aifordjsglobal.com/assets/%23noise",
+      "finalUrl": "https://aifordjsglobal.com/assets/%23noise",
+      "path": "assets/#noise/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "page"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://aifordjsglobal.com/assets/index-Bx0T_EcO.js",
+      "finalUrl": "https://aifordjsglobal.com/assets/index-Bx0T_EcO.js",
+      "path": "assets/index-Bx0T_EcO.js",
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 1322297,
+      "kind": "asset"
+    },
+    {
+      "url": "https://aifordjsglobal.com/assets/index-CaQAPFxY.css",
+      "finalUrl": "https://aifordjsglobal.com/assets/index-CaQAPFxY.css",
+      "path": "assets/index-CaQAPFxY.css",
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 68364,
+      "kind": "asset"
+    },
+    {
+      "url": "https://aifordjsglobal.com/assets/Djiing_@_Motown_Mondays_SF_1779866091022-DRYnCaBV.jpeg",
+      "finalUrl": "https://aifordjsglobal.com/assets/Djiing_@_Motown_Mondays_SF_1779866091022-DRYnCaBV.jpeg",
+      "path": "assets/Djiing_@_Motown_Mondays_SF_1779866091022-DRYnCaBV.jpeg",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21675,
+      "kind": "asset"
+    }
+  ],
+  "external": [
+    {
+      "url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap"
+    },
+    {
+      "url": "https://leanski.gumroad.com/l/ojfvqt"
+    },
+    {
+      "url": "https://www.bonfire.com/ai-for-djs-crewneck-1"
+    },
+    {
+      "url": "https://leanskee.com/"
+    }
+  ],
+  "failed": []
+}

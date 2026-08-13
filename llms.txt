@@ -1,0 +1,8 @@
+# AI For DJs Global
+> AI tools, playbooks, and training that help DJs and event promoters run their business — built in Hawaii, serving DJs worldwide.
+
+## Topics
+- [AI DJ Tools](https://aifordjsglobal.com): Automation and assistants for working DJs.
+- [DJ Playbook](https://aifordjsglobal.com/playbook): Repeatable systems for bookings and marketing.
+- [ChatGPT for DJs](https://aifordjsglobal.com): Prompts and workflows for music businesses.
+- [DJ Business Automation](https://aifordjsglobal.com): Remote coaching and setup.
