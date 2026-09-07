@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/styles.css">
+<script src="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/_ds_bundle.js"></script>
+<style>
+  :root { --gut: calc(var(--space-8) * 2); --sec: calc(var(--space-8) * 4); --stack: calc(var(--space-8) * 1.5); }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden; }
+  a { color: var(--color-accent-300); text-decoration: none; transition: color .25s ease; }
+  a:hover { color: var(--color-accent); }
+</style>
+</helmet>
+
+<div style="background: var(--color-bg); min-height: 100vh;">
+  <dc-import name="SiteNav" hint-size="100%,58px"></dc-import>
+
+  <section style="padding: calc(var(--space-8) * 3.5) var(--gut) var(--stack); max-width: 1360px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; gap: var(--space-4); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-400); margin-bottom: var(--stack);">
+      <span style="width: 34px; height: 1px; background: var(--color-accent);"></span>
+      Copy · paste · fill in the brackets
+    </div>
+    <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(38px, 5.6vw, 78px); line-height: 0.95; letter-spacing: -0.045em; margin: 0 0 var(--stack); text-wrap: balance;">AI-Workflow Business Checklist</h1>
+    <p style="font-size: clamp(16px, 1.4vw, 19px); line-height: 1.6; color: var(--color-neutral-300); max-width: 62ch; margin: 0;">
+      Everything below is copy-paste ready. Swap the bracketed placeholders — <span style="color: var(--color-neutral-200);">[DJ_NAME]</span>, <span style="color: var(--color-neutral-200);">[VENUE_NAME]</span>, <span style="color: var(--color-neutral-200);">[PRICE_RANGE]</span> — for your own details and send.
+    </p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--stack); max-width: 1360px; margin: 0 auto;">
+    <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+      <a href="#outreach" class="tag tag-outline" style="font-size: 12px;">Booking outreach</a>
+      <a href="#social" class="tag tag-outline" style="font-size: 12px;">Social calendar</a>
+      <a href="#replies" class="tag tag-outline" style="font-size: 12px;">Client email replies</a>
+      <a href="#templates" class="tag tag-outline" style="font-size: 12px;">Template bank</a>
+      <a href="#admin" class="tag tag-outline" style="font-size: 12px;">Weekly admin plan</a>
+      <a href="#plan" class="tag tag-outline" style="font-size: 12px;">90-day plan</a>
+      <a href="#tracker" class="tag tag-outline" style="font-size: 12px;">Booking tracker</a>
+    </div>
+  </section>
+
+  <section id="outreach" style="padding: 0 var(--gut) var(--sec); max-width: 1100px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">01</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3.2vw, 42px); letter-spacing: -0.035em; margin: 0;">Booking outreach</h2>
+    </div>
+    <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0 0 var(--stack); max-width: 60ch;">Cold emails to clubs and wedding planners, a 3-touch follow-up, an Instagram DM version, and a call-prep prompt for before you get on the phone.</p>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Cold email — clubs</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write a short, confident cold email from [DJ_NAME] to the booker at [VENUE_NAME], pitching for a resident or guest slot. Mention genres [GENRES], a comparable room I've played [PAST_VENUE], and my availability [AVAILABILITY]. End with one clear ask: a 15-minute call or a trial set. Under 120 words, no exclamation marks, no "passionate about music."</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Cold email — wedding planners</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write an introduction email from [DJ_NAME] to wedding planner [PLANNER_NAME], proposing a referral relationship. Cover: my package range [PRICE_RANGE], how I handle MC duties and timelines, one client result (a specific compliment or outcome), and an offer to send a one-page vendor sheet. Warm, professional, under 130 words.</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">3-touch follow-up sequence</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write three short follow-up emails to send after an unanswered booking inquiry to [VENUE_NAME] / [CLIENT_NAME]: Day 3 — light nudge, one new detail added. Day 10 — a specific reason to reply now (limited date availability). Day 21 — a polite close-out that leaves the door open. Each under 60 words, no guilt-tripping, no "just following up" as an opener.</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Instagram DM version</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Rewrite this outreach as a casual Instagram DM to [VENUE_NAME] / [PLANNER_NAME]'s account: under 40 words, no full sentences required, one link to my EPK or latest mix, and a single specific question that's easy to answer with one line. Tone: friendly industry peer, not a pitch.</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Claude call-prep prompt</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">I have a call with [CLIENT_NAME] about a [EVENT_TYPE] on [DATE]. Here's what I know: [DETAILS]. Give me: 5 questions I should ask that I might forget, 3 likely objections to my price of [PRICE_RANGE] and how to answer each without discounting, and a one-line way to close the call with a clear next step.</pre>
+    </div>
+  </section>
+
+  <section id="social" style="padding: 0 var(--gut) var(--sec); max-width: 1100px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">02</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3.2vw, 42px); letter-spacing: -0.035em; margin: 0;">Social media calendar</h2>
+    </div>
+    <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0 0 var(--stack); max-width: 60ch;">Five content pillars, a 30-day sample calendar, and prompts for Reels, carousels and stories.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); margin-bottom: var(--stack);">
+      <div class="card elev-sm"><div class="card-kicker">Pillar 1</div><div class="card-title" style="font-size:18px;">Behind the booth</div><p class="card-body">Setup, gear, prep — the process people never see.</p></div>
+      <div class="card elev-sm"><div class="card-kicker">Pillar 2</div><div class="card-title" style="font-size:18px;">Crowd moments</div><p class="card-body">Peak-hour clips, reactions, the room at its best.</p></div>
+      <div class="card elev-sm"><div class="card-kicker">Pillar 3</div><div class="card-title" style="font-size:18px;">Education</div><p class="card-body">A mixing tip, a gear take, a piece of DJ history.</p></div>
+      <div class="card elev-sm"><div class="card-kicker">Pillar 4</div><div class="card-title" style="font-size:18px;">Client proof</div><p class="card-body">Reviews, thank-you notes, before/after of a room.</p></div>
+      <div class="card elev-sm"><div class="card-kicker">Pillar 5</div><div class="card-title" style="font-size:18px;">Personal</div><p class="card-body">Why you DJ, your lineage, the human behind the bookings.</p></div>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">30-day sample calendar</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Build me a 30-day content calendar for a working DJ, rotating five pillars: behind the booth, crowd moments, education, client proof, personal. One post per day, 3-4 posts a week is fine, mark platform (Reel / carousel / story) for each, and note which real event or gig on my calendar each post should be built from: [UPCOMING_GIGS].</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Reel / carousel / story captions</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">From this footage/photo — [WHAT_IT_SHOWS] — write: a Reel hook under 8 words, three caption options in my voice (dry, no hype, minimal emoji), a 5-slide carousel outline if this were a carousel instead, and one story poll question to pair with it.</pre>
+    </div>
+  </section>
+
+  <section id="replies" style="padding: 0 var(--gut) var(--sec); max-width: 1100px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">03</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3.2vw, 42px); letter-spacing: -0.035em; margin: 0;">Automated client email replies</h2>
+    </div>
+    <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0 0 var(--stack); max-width: 62ch;">Seven ready-to-paste Gmail templates, the filter that should trigger each one, and where a Zapier automation could take over entirely.</p>
+
+    <div style="border-top: 1px solid var(--color-neutral-800);">
+      <div style="display: grid; grid-template-columns: minmax(0,180px) minmax(0,1fr) minmax(0,1fr); gap: var(--space-6); padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800); font-size: 14px;">
+        <div style="font-family: var(--font-heading); font-weight: 500;">New inquiry</div>
+        <div style="color: var(--color-neutral-400);">Filter: subject contains "booking," "availability," "quote"</div>
+        <div style="color: var(--color-neutral-400);">Zapier: Gmail trigger → draft reply → add row to Lead Tracker</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,180px) minmax(0,1fr) minmax(0,1fr); gap: var(--space-6); padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800); font-size: 14px;">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Availability check</div>
+        <div style="color: var(--color-neutral-400);">Filter: contains a date + "available"</div>
+        <div style="color: var(--color-neutral-400);">Zapier: check Calendar for that date → auto-fill yes/no in the reply</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,180px) minmax(0,1fr) minmax(0,1fr); gap: var(--space-6); padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800); font-size: 14px;">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Pricing request</div>
+        <div style="color: var(--color-neutral-400);">Filter: contains "price," "cost," "package"</div>
+        <div style="color: var(--color-neutral-400);">Zapier: attach the current rate sheet PDF automatically</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,180px) minmax(0,1fr) minmax(0,1fr); gap: var(--space-6); padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800); font-size: 14px;">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Follow-up (no reply)</div>
+        <div style="color: var(--color-neutral-400);">Trigger: 5 days after last outbound with no reply</div>
+        <div style="color: var(--color-neutral-400);">Zapier: schedule-send via delay step, cancel if client replies first</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,180px) minmax(0,1fr) minmax(0,1fr); gap: var(--space-6); padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800); font-size: 14px;">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Deposit received</div>
+        <div style="color: var(--color-neutral-400);">Filter: payment notification email (Stripe/PayPal)</div>
+        <div style="color: var(--color-neutral-400);">Zapier: payment webhook → send confirmation → move lead to "Booked"</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,180px) minmax(0,1fr) minmax(0,1fr); gap: var(--space-6); padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800); font-size: 14px;">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Final details</div>
+        <div style="color: var(--color-neutral-400);">Trigger: 14 days before event date</div>
+        <div style="color: var(--color-neutral-400);">Zapier: calendar-based trigger → send Event Brief request</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,180px) minmax(0,1fr) minmax(0,1fr); gap: var(--space-6); padding: var(--space-6) 0; font-size: 14px;">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Review request</div>
+        <div style="color: var(--color-neutral-400);">Trigger: 2 days after event date</div>
+        <div style="color: var(--color-neutral-400);">Zapier: calendar-based trigger → send review link</div>
+      </div>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-top: var(--stack);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Generate all 7 templates for your business</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write 7 Gmail reply templates for [DJ_NAME]'s DJ business, one each for: new inquiry, availability check, pricing request, no-reply follow-up, deposit received, final details request (14 days out), post-event review request. Keep each under 120 words, plain and warm, with placeholders in brackets for anything specific. My typical package range is [PRICE_RANGE].</pre>
+    </div>
+  </section>
+
+  <section id="templates" style="padding: 0 var(--gut) var(--sec); max-width: 1100px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">04</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3.2vw, 42px); letter-spacing: -0.035em; margin: 0;">Template bank</h2>
+    </div>
+    <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0 0 var(--stack); max-width: 62ch;">EPKs, bios, review responses and contract drafting. Contract prompts are a starting point, not legal advice — have a lawyer read your standard agreement once.</p>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">EPK — club version</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write a one-page electronic press kit for [DJ_NAME], club/festival version. Sections: 60-word bio, genres [GENRES], notable venues/events [LIST], mix link, tech rider summary, press quotes if any [QUOTES], and contact. Confident, no cliches like "sonic journey," written to be skimmed in 30 seconds by a busy booker.</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">EPK — wedding version</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write a one-page EPK for [DJ_NAME] aimed at engaged couples and planners. Sections: warm 80-word bio, how I handle MC duties, sample timeline structure, a couple's testimonial [QUOTE], package range starting at [PRICE_RANGE], and how to book. Reassuring tone — this reader is stressed and wants to feel safe, not sold to.</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Bios — short and long</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write my bio in two lengths — 25 words for a booking form, 150 words for a website about page. Facts: [DJ_NAME], [CITY], [YEARS] years, crew/residency [CREW], genres [GENRES], one thing that makes me different [DETAIL]. Plain, confident, no industry filler.</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface); margin-bottom: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Review responses — positive, neutral, negative</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Write three public responses to this review of my DJ service: [PASTE_REVIEW]. One if it's clearly positive (specific thanks, no generic "thanks so much!"), one if it's neutral/mixed (acknowledge the specific point, no defensiveness), one if it's negative (calm, brief, take it offline with a direct invitation to email me, no apology that admits fault I don't have). Also write a private follow-up email for the negative case.</pre>
+    </div>
+
+    <div data-prompt style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.1); background: var(--color-surface);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; letter-spacing: -0.02em;">Contract drafting — event, residency, wedding addendum</div>
+        <button data-copy class="btn btn-secondary" style="font-size: 12px; flex-shrink: 0;">Copy</button>
+      </div>
+      <pre data-text style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--color-neutral-200);">Not legal advice — have a lawyer review before use. Draft a [CONTRACT_TYPE: standard event / ongoing residency / wedding addendum] agreement for [DJ_NAME] and [CLIENT_NAME], covering fee [PRICE_RANGE], payment schedule, cancellation terms, equipment responsibilities, overtime rate, and liability. For a residency, add a term length and renewal/exit clause. For a wedding addendum, add MC duties, timeline sign-off deadline, and a special-song list clause.</pre>
+    </div>
+  </section>
+
+  <section id="admin" style="padding: 0 var(--gut) var(--sec); max-width: 1100px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">05</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3.2vw, 42px); letter-spacing: -0.035em; margin: 0;">Weekly admin automation plan</h2>
+    </div>
+    <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0 0 var(--stack); max-width: 62ch;">Run these blocks on a schedule and the admin stops eating your week. Total: 5+ hours saved.</p>
+    <div style="border-top: 1px solid var(--color-neutral-800);">
+      <div style="display: grid; grid-template-columns: minmax(0,120px) minmax(0,1fr) auto; gap: var(--space-6); align-items: center; padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Monday</div>
+        <div style="color: var(--color-neutral-300); font-size: 15px;">Clear the inbox with the reply templates; update the Lead Tracker</div>
+        <div style="color: var(--color-accent-300); font-size: 13px; white-space: nowrap;">45 min saved</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,120px) minmax(0,1fr) auto; gap: var(--space-6); align-items: center; padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Tuesday</div>
+        <div style="color: var(--color-neutral-300); font-size: 15px;">Run the 30-day content prompt for the week's 3-4 posts</div>
+        <div style="color: var(--color-accent-300); font-size: 13px; white-space: nowrap;">1 hr saved</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,120px) minmax(0,1fr) auto; gap: var(--space-6); align-items: center; padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Wednesday</div>
+        <div style="color: var(--color-neutral-300); font-size: 15px;">Send the 3-touch follow-ups that are due this week</div>
+        <div style="color: var(--color-accent-300); font-size: 13px; white-space: nowrap;">30 min saved</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,120px) minmax(0,1fr) auto; gap: var(--space-6); align-items: center; padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Thursday</div>
+        <div style="color: var(--color-neutral-300); font-size: 15px;">Draft any contracts or EPKs for the week's inquiries</div>
+        <div style="color: var(--color-accent-300); font-size: 13px; white-space: nowrap;">1 hr saved</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,120px) minmax(0,1fr) auto; gap: var(--space-6); align-items: center; padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Friday</div>
+        <div style="color: var(--color-neutral-300); font-size: 15px;">Send final-details requests for events inside 14 days</div>
+        <div style="color: var(--color-accent-300); font-size: 13px; white-space: nowrap;">30 min saved</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,120px) minmax(0,1fr) auto; gap: var(--space-6); align-items: center; padding: var(--space-6) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500;">Weekend</div>
+        <div style="color: var(--color-neutral-300); font-size: 15px;">Play the gigs. Send review requests 2 days after each.</div>
+        <div style="color: var(--color-accent-300); font-size: 13px; white-space: nowrap;">1.5 hr saved</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0,120px) minmax(0,1fr) auto; gap: var(--space-6); align-items: center; padding: var(--space-6) 0;">
+        <div style="font-family: var(--font-heading); font-weight: 500; color: var(--color-accent-300);">Total</div>
+        <div style="color: var(--color-neutral-300); font-size: 15px;">Time reclaimed for music, not admin</div>
+        <div style="color: var(--color-accent); font-size: 15px; font-weight: 500; white-space: nowrap;">5+ hrs / week</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan" style="padding: 0 var(--gut) var(--sec); max-width: 1100px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">06</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3.2vw, 42px); letter-spacing: -0.035em; margin: 0;">90-day improvement plan</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1px; background: var(--color-neutral-800); border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); overflow: hidden;">
+      <div style="background: var(--color-bg); padding: calc(var(--space-8) * 1.1);">
+        <div style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent); margin-bottom: var(--space-6);">Days 1–7 · Baseline</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 0;">Log every inquiry, reply time and outcome for a week. This is the number every later target gets measured against.</p>
+      </div>
+      <div style="background: var(--color-bg); padding: calc(var(--space-8) * 1.1);">
+        <div style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent); margin-bottom: var(--space-6);">Days 8–30 · Build</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 0;">Put the reply templates and follow-up sequence live. Target: average reply time under 2 hours.</p>
+      </div>
+      <div style="background: var(--color-bg); padding: calc(var(--space-8) * 1.1);">
+        <div style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent); margin-bottom: var(--space-6);">Days 31–60 · Optimize</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 0;">Track booking rate = bookings ÷ inquiries. Test one variable at a time — price framing, follow-up timing, EPK format.</p>
+      </div>
+      <div style="background: var(--color-bg); padding: calc(var(--space-8) * 1.1);">
+        <div style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent); margin-bottom: var(--space-6);">Days 61–90 · Scale</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 0;">Realistic target: booking rate up 15–25% from baseline, reply time under 1 hour, 5+ admin hours reclaimed weekly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tracker" style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--gut); align-items: center; border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.6); background: linear-gradient(120deg, var(--color-accent-900), transparent 70%);">
+      <div>
+        <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent);">Companion spreadsheet</div>
+        <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(24px, 3vw, 38px); letter-spacing: -0.03em; margin: 12px 0 var(--space-4);">DJ Booking Tracker — 3 Month</h2>
+        <p style="color: var(--color-neutral-300); line-height: 1.65; margin: 0 0 var(--space-4); max-width: 50ch; font-size: 15px;">Six tabs with live formulas: Dashboard (KPI cards + charts), Weekly Log (12 weeks), Lead Tracker with status dropdowns, Booking Funnel with auto conversion %, Content Calendar, and an Email Automation Log that auto-calculates hours saved per week.</p>
+        <p style="color: var(--color-neutral-500); line-height: 1.6; margin: 0; max-width: 50ch; font-size: 13px;">Week 0 is pre-filled with a baseline so the formulas work the moment you open it.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: var(--space-4);">
+        <a class="btn btn-primary" href="mailto:Lino@infoleanskee.com?subject=Booking%20Tracker" style="padding: 12px 20px; font-size: 14px;">Request the tracker</a>
+        <a class="btn btn-ghost" href="Playbook.dc.html" style="font-size: 14px;">Or get the Playbook →</a>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this.bind(); this._mo = new MutationObserver(() => this.bind()); this._mo.observe(document.body, { childList: true, subtree: true }); }
+  componentWillUnmount() { if (this._mo) this._mo.disconnect(); }
+  bind() {
+    document.querySelectorAll("[data-prompt]").forEach((card) => {
+      const btn = card.querySelector("[data-copy]");
+      const pre = card.querySelector("[data-text]");
+      if (!btn || !pre || btn.dataset.bound) return;
+      btn.dataset.bound = "1";
+      btn.addEventListener("click", async () => {
+        try { await navigator.clipboard.writeText(pre.textContent.trim()); } catch (e) {}
+        const old = btn.textContent;
+        btn.textContent = "Copied";
+        btn.style.color = "var(--color-accent)";
+        setTimeout(() => { btn.textContent = old; btn.style.color = ""; }, 1600);
+      });
+    });
+  }
+}
+</script>
+</body>
+</html>
