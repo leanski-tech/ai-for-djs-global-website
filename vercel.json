@@ -1,4 +1,7 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "echo 'Static site - no build step required'",
+  "outputDirectory": ".",
   "rewrites": [
     {
       "source": "/((?!assets/|images/|videos/).*)",
