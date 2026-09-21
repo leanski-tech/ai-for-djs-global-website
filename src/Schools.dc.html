@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/styles.css">
+<script src="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/_ds_bundle.js"></script>
+<style>
+  :root { --gut: calc(var(--space-8) * 2); --sec: calc(var(--space-8) * 4); --stack: calc(var(--space-8) * 1.5); }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden; }
+  a { color: var(--color-accent-300); text-decoration: none; transition: color .25s ease; }
+  a:hover { color: var(--color-accent); }
+</style>
+</helmet>
+
+<div style="background: var(--color-bg); min-height: 100vh;">
+  <dc-import name="SiteNav" hint-size="100%,58px"></dc-import>
+
+  <section style="padding: calc(var(--space-8) * 3.5) var(--gut) var(--stack); max-width: 1360px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; gap: var(--space-4); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-400); margin-bottom: var(--stack);">
+      <span style="width: 34px; height: 1px; background: var(--color-accent);"></span>
+      How to actually learn this
+    </div>
+    <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(38px, 5.6vw, 82px); line-height: 0.95; letter-spacing: -0.045em; margin: 0 0 var(--stack);">DJ Schools Directory</h1>
+    <p style="font-size: clamp(16px, 1.4vw, 19px); line-height: 1.6; color: var(--color-neutral-300); max-width: 58ch; margin: 0;">
+      Formal courses, community programs and the route most working DJs actually took. Judge any of them on the same four questions below.
+    </p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Route one</div>
+        <div class="card-title">Community and youth programs</div>
+        <p class="card-body">Libraries, arts nonprofits and after-school music programs. Cheapest real access to gear and a room, and often taught by DJs still gigging. Ask your local arts council what's funded this year.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Route two</div>
+        <div class="card-title">Private lessons with a working DJ</div>
+        <p class="card-body">The fastest correction of bad habits. Two hours a month with someone who plays the rooms you want is worth more than a term of theory. Expect $50–150 an hour.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Route three</div>
+        <div class="card-title">Music schools and colleges</div>
+        <p class="card-body">Structured, credentialed, and strongest for production and audio engineering rather than floor craft. Worth it if you want the studio skills alongside the decks.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Route four</div>
+        <div class="card-title">Crews, mentors and battles</div>
+        <p class="card-body">How most of the greats learned, including the founder of this site. You get standards, criticism and a scene. It costs nothing and asks for everything.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Route five</div>
+        <div class="card-title">Online courses</div>
+        <p class="card-body">Good for technique drills you can repeat, bad for reading a room. Use them for scratching, gain staging and library organisation, not for learning taste.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Route six</div>
+        <div class="card-title">The unpaid warm-up slot</div>
+        <p class="card-body">Ask a promoter for the first hour and take it seriously. Playing to twelve people at 9pm teaches patience and programming that no course can.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1000px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">01</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3.2vw, 44px); letter-spacing: -0.035em; margin: 0;">Four questions before you pay</h2>
+    </div>
+    <div style="border-top: 1px solid var(--color-neutral-800);">
+      <div style="display: grid; grid-template-columns: minmax(0, 40px) minmax(0, 1fr); gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="color: var(--color-accent); font-size: 13px;">01</div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: var(--color-neutral-300);">Who is teaching, and are they still getting booked? Ask where they played last month.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 40px) minmax(0, 1fr); gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="color: var(--color-accent); font-size: 13px;">02</div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: var(--color-neutral-300);">How many hours are your hands actually on gear, versus watching a screen?</p>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 40px) minmax(0, 1fr); gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="color: var(--color-accent); font-size: 13px;">03</div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: var(--color-neutral-300);">Does it end with you playing in front of people? A course with no gig at the end is half a course.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 40px) minmax(0, 1fr); gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="color: var(--color-accent); font-size: 13px;">04</div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: var(--color-neutral-300);">Is the business side covered at all? If not, that's what <a href="Playbook.dc.html">the Playbook</a> is for.</p>
+      </div>
+    </div>
+    <p style="color: var(--color-neutral-500); font-size: 14px; line-height: 1.7; margin: var(--stack) 0 0;">Teaching in your city and want listing here? <a href="mailto:Lino@infoleanskee.com">Send the details.</a></p>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>
