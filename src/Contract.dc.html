@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/styles.css">
+<script src="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/_ds_bundle.js"></script>
+<style>
+  :root { --gut: calc(var(--space-8) * 2); --sec: calc(var(--space-8) * 4); --stack: calc(var(--space-8) * 1.5); }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden; }
+  a { color: var(--color-accent-300); text-decoration: none; transition: color .25s ease; }
+  a:hover { color: var(--color-accent); }
+</style>
+</helmet>
+
+<div style="background: var(--color-bg); min-height: 100vh;">
+  <dc-import name="SiteNav" hint-size="100%,58px"></dc-import>
+
+  <section style="padding: calc(var(--space-8) * 3.5) var(--gut) var(--stack); max-width: 1360px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; gap: var(--space-4); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-400); margin-bottom: var(--stack);">
+      <span style="width: 34px; height: 1px; background: var(--color-accent);"></span>
+      Free · seconds, not evenings
+    </div>
+    <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(38px, 5.6vw, 82px); line-height: 0.95; letter-spacing: -0.045em; margin: 0 0 var(--stack);">DJ Contract Generator</h1>
+    <p style="font-size: clamp(16px, 1.4vw, 19px); line-height: 1.6; color: var(--color-neutral-300); max-width: 56ch; margin: 0;">
+      Event details in, a complete performance agreement out — payment terms, cancellation, gear, overtime and liability.
+    </p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: var(--gut); align-items: start;">
+      <div style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.2); background: var(--color-surface); display: grid; gap: var(--space-6);">
+        <div class="field"><label for="c-dj">Your name / business</label><input class="input" id="c-dj" type="text" placeholder="DJ Leanskee"></div>
+        <div class="field"><label for="c-client">Client name</label><input class="input" id="c-client" type="text" placeholder="Maria Santos"></div>
+        <div class="field"><label for="c-type">Event type</label><input class="input" id="c-type" type="text" placeholder="Wedding reception"></div>
+        <div class="field"><label for="c-venue">Venue</label><input class="input" id="c-venue" type="text" placeholder="The Grand, Boston MA"></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+          <div class="field"><label for="c-date">Date</label><input class="input" id="c-date" type="text" placeholder="June 14, 2026"></div>
+          <div class="field"><label for="c-hours">Hours</label><input class="input" id="c-hours" type="text" placeholder="6pm – 11pm"></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+          <div class="field"><label for="c-fee">Total fee</label><input class="input" id="c-fee" type="text" placeholder="$1,400"></div>
+          <div class="field"><label for="c-dep">Deposit</label><input class="input" id="c-dep" type="text" placeholder="$400"></div>
+        </div>
+        <button class="btn btn-primary btn-block" data-gen style="padding: 12px 20px; font-size: 14px;">Generate the contract</button>
+        <p style="font-size: 12px; line-height: 1.6; color: var(--color-neutral-500); margin: 0;">A starting point, not legal advice. Have a lawyer read your standard agreement once.</p>
+      </div>
+
+      <div style="border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.4); min-height: 480px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); margin-bottom: var(--stack); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">
+          <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent);">Performance agreement</div>
+          <button class="btn btn-secondary" data-copy style="font-size: 12px;">Copy text</button>
+        </div>
+        <pre data-out style="margin: 0; white-space: pre-wrap; font-family: var(--font-body); font-size: 14px; line-height: 1.8; color: var(--color-neutral-300);">Fill in the details and generate — the full agreement appears here, ready to copy into your email or paperwork.</pre>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this.bind(); this._mo = new MutationObserver(() => this.bind()); this._mo.observe(document.body, { childList: true, subtree: true }); }
+  componentWillUnmount() { if (this._mo) this._mo.disconnect(); }
+  bind() {
+    const g = document.querySelector("[data-gen]");
+    if (g && !g.dataset.bound) { g.dataset.bound = "1"; g.addEventListener("click", () => this.gen()); }
+    const c = document.querySelector("[data-copy]");
+    if (c && !c.dataset.bound) {
+      c.dataset.bound = "1";
+      c.addEventListener("click", async () => {
+        const out = document.querySelector("[data-out]");
+        if (!out) return;
+        try { await navigator.clipboard.writeText(out.textContent); } catch (e) {}
+        const old = c.textContent; c.textContent = "Copied"; c.style.color = "var(--color-accent)";
+        setTimeout(() => { c.textContent = old; c.style.color = ""; }, 1600);
+      });
+    }
+  }
+  async gen() {
+    const v = (id, fb) => { const el = document.getElementById(id); return el && el.value.trim() ? el.value.trim() : fb; };
+    const dj = v("c-dj", "[DJ NAME]"), client = v("c-client", "[CLIENT NAME]"), type = v("c-type", "[EVENT TYPE]"),
+      venue = v("c-venue", "[VENUE]"), date = v("c-date", "[DATE]"), hours = v("c-hours", "[HOURS]"),
+      fee = v("c-fee", "[TOTAL FEE]"), dep = v("c-dep", "[DEPOSIT]");
+    const out = document.querySelector("[data-out]");
+    if (!out) return;
+    if (window.claude && window.claude.complete) {
+      out.textContent = "Drafting…";
+      try {
+        const sys = "You draft DJ performance agreements. Output plain text only (no markdown), a complete numbered contract with sections for performance, fee and payment, overtime, cancellation, venue/power/access, force majeure, liability and conduct, media, and a signature block. Not legal advice — do not claim otherwise.";
+        const user = "DJ: " + dj + ". Client: " + client + ". Event: " + type + " at " + venue + " on " + date + ", hours " + hours + ". Total fee: " + fee + ". Deposit: " + dep + ". Draft the full agreement.";
+        const text = await window.claude.complete({ system: sys, messages: [{ role: "user", content: user }], max_tokens: 1400 });
+        out.textContent = text;
+      } catch (e) { out.textContent = "Couldn't reach the AI just now — try again in a moment."; }
+      return;
+    }
+    out.textContent = [
+      "DJ PERFORMANCE AGREEMENT",
+      "",
+      "This agreement is between " + dj + " (\"the DJ\") and " + client + " (\"the Client\") for a " + type + " at " + venue + " on " + date + ".",
+      "",
+      "1. PERFORMANCE",
+      "The DJ will perform from " + hours + ", arriving no later than 90 minutes before start for load-in and sound check. The DJ provides professional DJ equipment, speakers appropriate to the room, and one wireless microphone unless stated otherwise.",
+      "",
+      "2. FEE AND PAYMENT",
+      "Total fee: " + fee + ". A non-refundable deposit of " + dep + " reserves the date. The remaining balance is due on or before the event date. Accepted methods: bank transfer, card, or cash on the day.",
+      "",
+      "3. OVERTIME",
+      "Additional performance time is available at the DJ's standard hourly rate, agreed in writing (text or email is sufficient) on the day and payable before the extension begins.",
+      "",
+      "4. CANCELLATION",
+      "If the Client cancels more than 60 days before the event, the deposit is retained and nothing further is owed. Within 60 days, 50% of the total fee is due. Within 14 days, the full fee is due. If the DJ cancels for any reason other than force majeure, all monies paid are refunded in full.",
+      "",
+      "5. VENUE, POWER AND ACCESS",
+      "The Client ensures the venue provides a covered, level performance area of at least 8ft x 6ft, two dedicated grounded power outlets within 25ft, and load-in access within a reasonable distance of the performance area.",
+      "",
+      "6. FORCE MAJEURE",
+      "Neither party is liable for failure to perform due to events beyond reasonable control, including severe weather, illness, venue closure, or government restriction. The parties will make good-faith efforts to reschedule.",
+      "",
+      "7. LIABILITY AND CONDUCT",
+      "The DJ is not liable for injury or damage caused by guests. The Client is responsible for guest conduct and for damage to DJ equipment caused by guests. The DJ reserves the right to reduce volume to comply with venue or local ordinance.",
+      "",
+      "8. MEDIA",
+      "The DJ may photograph or record the performance setup for portfolio and social use, excluding identifiable guests where the Client objects in writing.",
+      "",
+      "AGREED",
+      "",
+      "DJ: " + dj + "     Signature: ______________________  Date: ____________",
+      "",
+      "Client: " + client + "     Signature: ______________________  Date: ____________"
+    ].join("\n");
+  }
+}
+</script>
+</body>
+</html>
