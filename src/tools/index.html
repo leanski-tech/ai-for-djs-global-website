@@ -1,104 +1,268 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI For DJs Global | AI Tools, Workflows and Education for DJs</title>
-  <meta name="description" content="AI For DJs Global gives working DJs practical AI tools, workflows, prompts and education to save time, run the business side better and stay focused on the crowd." />
-  <meta name="keywords" content="AI for DJs, AI DJ tools, ChatGPT for DJs, DJ business automation, AI prompts for DJs, DJ track analyzer, DJ contract generator, DJ event brief, AI Playbook for DJs, DJ marketing AI" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="author" content="DJ Leanskee, Lino Delgado" />
-  <meta name="theme-color" content="#050708" />
-  <link rel="canonical" href="https://aifordjsglobal.com/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="AI For DJs Global" />
-  <meta property="og:title" content="AI For DJs Global | AI Built for Working DJs" />
-  <meta property="og:description" content="Practical AI tools, workflows, prompts and education built for working DJs." />
-  <meta property="og:url" content="https://aifordjsglobal.com/" />
-  <meta property="og:image" content="https://aifordjsglobal.com/opengraph.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI For DJs Global | AI Built for Working DJs" />
-  <meta name="twitter:description" content="Practical AI tools, workflows, prompts and education built for working DJs." />
-  <meta name="twitter:image" content="https://aifordjsglobal.com/opengraph.jpg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://aifordjsglobal.com/#website",
-        "name": "AI For DJs Global",
-        "url": "https://aifordjsglobal.com/",
-        "description": "Practical AI tools, workflows, prompts and education for working DJs.",
-        "publisher": {"@id": "https://aifordjsglobal.com/#organization"},
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://aifordjsglobal.com/#organization",
-        "name": "AI For DJs Global",
-        "url": "https://aifordjsglobal.com/",
-        "founder": {"@id": "https://aifordjsglobal.com/#person"},
-        "description": "AI education, tools and resources for working DJs and event professionals."
-      },
-      {
-        "@type": "Person",
-        "@id": "https://aifordjsglobal.com/#person",
-        "name": "Lino Delgado",
-        "alternateName": ["DJ Leanskee", "Leanski"],
-        "jobTitle": ["DJ", "Event Producer", "AI Educator"],
-        "memberOf": {"@type": "Organization", "name": "Floorlords Crew"},
-        "homeLocation": {"@type": "Place", "name": "Honolulu, Hawaii"},
-        "url": "https://djleanskee.com/",
-        "sameAs": [
-          "https://www.instagram.com/leanskee_flc/",
-          "https://www.facebook.com/lino.delgado.5",
-          "https://www.linkedin.com/in/lino-delgado-26279615",
-          "https://www.youtube.com/@leanskionerism"
-        ]
-      },
-      {
-        "@type": "Book",
-        "@id": "https://aifordjsglobal.com/#playbook",
-        "name": "The DJ's AI Playbook",
-        "author": {"@id": "https://aifordjsglobal.com/#person"},
-        "genre": "DJ Business and Artificial Intelligence",
-        "inLanguage": "en-US",
-        "url": "https://aifordjsglobal.com/playbook"
-      }
-    ]
-  }
-  </script>
-
-  <script type="module" crossorigin src="/assets/index-Bx0T_EcO.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CaQAPFxY.css" />
-  <link rel="stylesheet" href="/premium-brand.css" />
-  <script defer src="/premium-brand.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/">
+<script src="./support.js"></script>
 </head>
 <body>
-  <div id="root"></div>
-  <noscript>
-    <main style="max-width:900px;margin:0 auto;padding:64px 24px;font-family:Arial,sans-serif;background:#050708;color:#f4f7f8;min-height:100vh">
-      <h1>AI For DJs Global</h1>
-      <p>Practical AI tools, workflows, prompts and education built for working DJs.</p>
-      <h2>Start Here</h2>
-      <ul>
-        <li><a href="/analyzer">AI Track Analyzer</a></li>
-        <li><a href="/chat">AI Chat for DJs</a></li>
-        <li><a href="/contract">DJ Contract Generator</a></li>
-        <li><a href="/event-brief">Event Brief Generator</a></li>
-        <li><a href="/prompts">AI Prompt Library</a></li>
-        <li><a href="/tools">AI Tools Directory</a></li>
-        <li><a href="/playbook">The DJ's AI Playbook</a></li>
-        <li><a href="/blog">Field Notes</a></li>
-      </ul>
-    </main>
-  </noscript>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/styles.css">
+<script src="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/_ds_bundle.js"></script>
+<style>
+  :root { --gut: calc(var(--space-8) * 2); --sec: calc(var(--space-8) * 4); --stack: calc(var(--space-8) * 1.5); }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden; }
+  a { color: var(--color-accent-300); text-decoration: none; transition: color .25s ease; }
+  a:hover { color: var(--color-accent); }
+</style>
+</helmet>
+
+<div style="background: var(--color-bg);">
+  <dc-import name="SiteNav" active="tools" hint-size="100%,58px"></dc-import>
+
+  <section style="padding: calc(var(--space-8) * 3.5) var(--gut) var(--stack); max-width: 1360px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; gap: var(--space-4); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-400); margin-bottom: var(--stack);">
+      <span style="width: 34px; height: 1px; background: var(--color-accent);"></span>
+      Reviewed from a DJ's perspective
+    </div>
+    <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(38px, 5.6vw, 82px); line-height: 0.95; letter-spacing: -0.045em; margin: 0 0 var(--stack);">AI Tools Directory</h1>
+    <p style="font-size: clamp(16px, 1.4vw, 19px); line-height: 1.6; color: var(--color-neutral-300); max-width: 56ch; margin: 0;">
+      Every tool here earns its place in a working DJ's week. What it's for, when it's worth paying for, and where it falls down.
+    </p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Writing, contracts and client email</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid $20/mo</div>
+        <div class="card-title">ChatGPT</div>
+        <p class="card-body">The default drafting partner: proposals, contracts, bios, follow-ups, captions. Best results come from a saved prompt, not a fresh ask each time.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid $20/mo</div>
+        <div class="card-title">Claude</div>
+        <p class="card-body">Longer, calmer writing. Better at holding your voice across a whole press kit or a page of terms without drifting into hype.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Open-weight · free to run</div>
+        <div class="card-title">Hermes</div>
+        <p class="card-body">Nous Research's open Hermes models — a solid free alternative for drafting when you'd rather not run everything through a closed API.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Open-weight · free to run</div>
+        <div class="card-title">Mistral</div>
+        <p class="card-body">Another strong open model in the same lane as Hermes — fast, cheap to self-host, good for drafting at volume.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free</div>
+        <div class="card-title">DJ Contract Generator</div>
+        <p class="card-body">Ours. Event details in, a complete performance contract out — payment terms, cancellation, equipment, liability. <a href="Contract.dc.html">Open it →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Music, keys and track analysis</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Free</div>
+        <div class="card-title">AI Track Analyzer</div>
+        <p class="card-body">Ours. Camelot keys, BPM transition range, energy-arc advice, five techniques and five next tracks. <a href="Analyzer.dc.html">Open it →</a></p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free · paid tiers</div>
+        <div class="card-title">TuneBat</div>
+        <p class="card-body">Fast key and BPM lookup for almost anything released. Good for checking a request mid-set on your phone.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">Fadr</div>
+        <p class="card-body">Stem separation and auto-remix in the browser. Clean acapellas and instrumentals for edits without opening a DAW.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Paid</div>
+        <div class="card-title">rekordbox</div>
+        <p class="card-body">Not AI, but the library layer everything else feeds. Analyze once, tag properly, and your crates stay searchable for years.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Research, generation and graphics</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier</div>
+        <div class="card-title">Gemini</div>
+        <p class="card-body">Research and long-document reading. Powers our Track Analyzer and the free <a href="Chat.dc.html">AI Chat for DJs</a>.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">Perplexity</div>
+        <p class="card-body">Quick sourced answers — venue capacities, union rules, gear specs — with links you can actually check before you quote.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Paid</div>
+        <div class="card-title">Suno / Udio</div>
+        <p class="card-body">Music generation. Useful for drops, idents, bumpers and event stings. Not for filling a set — know the licensing before anything goes out.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">Adobe Firefly</div>
+        <p class="card-body">Flyers, cover art and social graphics with commercially safer training data than most image models.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Performance and mixing</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">djay Pro (Algoriddim)</div>
+        <p class="card-body">Neural Mix stem separation live in the app — strong for mobile and wedding DJs building mashups on the fly. Pre-render stems for dense or older tracks to avoid artifacts.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">One-time purchase</div>
+        <div class="card-title">Mixed In Key</div>
+        <p class="card-body">The most reliable key detection for harmonic mixing. Pays for itself in smoother transitions the first time you use it to plan a set.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Paid</div>
+        <div class="card-title">DJ.Studio</div>
+        <p class="card-body">Plan and pre-build a mix on a timeline before the gig — built for wedding and corporate prep where the transitions can't be left to chance.</p>
+      </div>
+    </div>
+    <p style="color: var(--color-neutral-500); font-size: 13px; line-height: 1.7; margin: var(--stack) 0 0;">Treat AI transition suggestions as a shortlist, not a final setlist — the energy curve and crowd response still decide the mix.</p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Stem separation and audio repair</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Free ~5/mo · $4–$12/mo</div>
+        <div class="card-title">Moises</div>
+        <p class="card-body">Mobile-first vocal/drum/bass/instrument separation plus chord detection and pitch or speed changes. Cheapest way to prep clean acapellas on the road.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">£6–£12/mo</div>
+        <div class="card-title">LALAL.AI</div>
+        <p class="card-body">Up to 10 stems — vocals, drums, bass, piano, guitar, strings and more — browser-based with nothing to install.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">$399 – $1,399</div>
+        <div class="card-title">iZotope RX 12</div>
+        <p class="card-body">AI audio repair for room hum, clicks, plosives and mic bleed — the tool for cleaning up recorded sets before you publish them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Mastering and production</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">$4–$25</div>
+        <div class="card-title">LANDR</div>
+        <p class="card-body">One-click AI mastering plus distribution — the fastest route from a recorded mix to something published sounding finished.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">$175 – $499</div>
+        <div class="card-title">iZotope Ozone 12</div>
+        <p class="card-body">Master Assistant proposes a starting EQ, compression and loudness chain, fully tweakable in your DAW afterward.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · $7.99/mo</div>
+        <div class="card-title">Splice</div>
+        <p class="card-body">AI sample and loop search by key and tempo, plus rentals for plugins like Ozone and RX without buying them outright.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Music generation — intros, interludes, original content</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Free 50/day · $8–$24/mo</div>
+        <div class="card-title">Suno</div>
+        <p class="card-body">Full song generation from text or lyrics. Premier tier adds stem export and a full DAW for finishing what it generates.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free 100/mo · $10/mo</div>
+        <div class="card-title">Udio</div>
+        <p class="card-body">Song generation with remix and extend tools — useful for stretching a drop or an ident into a full intro.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free 3/mo · €11/mo</div>
+        <div class="card-title">AIVA</div>
+        <p class="card-body">Instrumental and cinematic composition that exports MIDI — good for scoring a promo reel rather than filling a set.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">~$11/mo</div>
+        <div class="card-title">Soundraw</div>
+        <p class="card-body">Royalty-free instrumentals generated by mood, genre and length — safe background music for promo content.</p>
+      </div>
+    </div>
+    <p style="color: var(--color-neutral-500); font-size: 13px; line-height: 1.7; margin: var(--stack) 0 0;">Generated music is for drops, idents and promo content — check licensing before anything goes into a paid set.</p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Automation and business ops</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); padding-top: var(--stack);">
+      <div class="card elev-sm">
+        <div class="card-kicker">Paid</div>
+        <div class="card-title">Manus</div>
+        <p class="card-body">An autonomous agent that can carry out multi-step tasks — research a venue, draft and send follow-ups, build a spreadsheet — with less hand-holding than a chat window.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">Zapier</div>
+        <p class="card-body">Connects Gmail, your calendar and payment tools so replies, follow-ups and review requests fire on a schedule instead of on memory. Prompts to run through it are in the <a href="Workflow.dc.html">Business Checklist</a>.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">Notion AI</div>
+        <p class="card-body">One place for the Lead Tracker, event briefs and content calendar, with AI that can summarize a client thread into a to-do list.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">Descript</div>
+        <p class="card-body">Edit talking-head video by editing text. Turns a phone clip from the booth into a clean Reel without touching a timeline.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">CapCut</div>
+        <p class="card-body">Fast captions, beat-synced cuts and templates built for short-form — the quickest way from gig footage to a posted Reel.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">Canva Magic Studio</div>
+        <p class="card-body">EPKs, flyers, story templates and a brand kit that keeps every graphic consistent without opening Illustrator.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Free tier · paid</div>
+        <div class="card-title">ElevenLabs</div>
+        <p class="card-body">Clean voiceovers for promo videos or IVR-style booking confirmations in your own cloned voice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--gut); align-items: center; border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.6); background: linear-gradient(120deg, var(--color-accent-900), transparent 70%);">
+      <div>
+        <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(22px, 2.6vw, 34px); letter-spacing: -0.035em; margin: 0 0 var(--space-4);">The prompts matter more than the tool</h2>
+        <p style="color: var(--color-neutral-300); line-height: 1.65; margin: 0; max-width: 46ch; font-size: 15px;">Any of these gets better with a prompt built for DJ work. There are 30+ in the Playbook.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: var(--space-4);">
+        <a class="btn btn-primary" href="Playbook.dc.html" style="padding: 12px 20px; font-size: 14px;">See the Playbook</a>
+        <a class="btn btn-ghost" href="Prompts.dc.html" style="font-size: 14px;">Free prompt library →</a>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
 </body>
 </html>
