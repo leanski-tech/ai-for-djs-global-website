@@ -1,104 +1,274 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI For DJs Global | AI Tools, Workflows and Education for DJs</title>
-  <meta name="description" content="AI For DJs Global gives working DJs practical AI tools, workflows, prompts and education to save time, run the business side better and stay focused on the crowd." />
-  <meta name="keywords" content="AI for DJs, AI DJ tools, ChatGPT for DJs, DJ business automation, AI prompts for DJs, DJ track analyzer, DJ contract generator, DJ event brief, AI Playbook for DJs, DJ marketing AI" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="author" content="DJ Leanskee, Lino Delgado" />
-  <meta name="theme-color" content="#050708" />
-  <link rel="canonical" href="https://aifordjsglobal.com/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="AI For DJs Global" />
-  <meta property="og:title" content="AI For DJs Global | AI Built for Working DJs" />
-  <meta property="og:description" content="Practical AI tools, workflows, prompts and education built for working DJs." />
-  <meta property="og:url" content="https://aifordjsglobal.com/" />
-  <meta property="og:image" content="https://aifordjsglobal.com/opengraph.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI For DJs Global | AI Built for Working DJs" />
-  <meta name="twitter:description" content="Practical AI tools, workflows, prompts and education built for working DJs." />
-  <meta name="twitter:image" content="https://aifordjsglobal.com/opengraph.jpg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://aifordjsglobal.com/#website",
-        "name": "AI For DJs Global",
-        "url": "https://aifordjsglobal.com/",
-        "description": "Practical AI tools, workflows, prompts and education for working DJs.",
-        "publisher": {"@id": "https://aifordjsglobal.com/#organization"},
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://aifordjsglobal.com/#organization",
-        "name": "AI For DJs Global",
-        "url": "https://aifordjsglobal.com/",
-        "founder": {"@id": "https://aifordjsglobal.com/#person"},
-        "description": "AI education, tools and resources for working DJs and event professionals."
-      },
-      {
-        "@type": "Person",
-        "@id": "https://aifordjsglobal.com/#person",
-        "name": "Lino Delgado",
-        "alternateName": ["DJ Leanskee", "Leanski"],
-        "jobTitle": ["DJ", "Event Producer", "AI Educator"],
-        "memberOf": {"@type": "Organization", "name": "Floorlords Crew"},
-        "homeLocation": {"@type": "Place", "name": "Honolulu, Hawaii"},
-        "url": "https://djleanskee.com/",
-        "sameAs": [
-          "https://www.instagram.com/leanskee_flc/",
-          "https://www.facebook.com/lino.delgado.5",
-          "https://www.linkedin.com/in/lino-delgado-26279615",
-          "https://www.youtube.com/@leanskionerism"
-        ]
-      },
-      {
-        "@type": "Book",
-        "@id": "https://aifordjsglobal.com/#playbook",
-        "name": "The DJ's AI Playbook",
-        "author": {"@id": "https://aifordjsglobal.com/#person"},
-        "genre": "DJ Business and Artificial Intelligence",
-        "inLanguage": "en-US",
-        "url": "https://aifordjsglobal.com/playbook"
-      }
-    ]
-  }
-  </script>
-
-  <script type="module" crossorigin src="/assets/index-Bx0T_EcO.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CaQAPFxY.css" />
-  <link rel="stylesheet" href="/premium-brand.css" />
-  <script defer src="/premium-brand.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/">
+<script src="./support.js"></script>
 </head>
 <body>
-  <div id="root"></div>
-  <noscript>
-    <main style="max-width:900px;margin:0 auto;padding:64px 24px;font-family:Arial,sans-serif;background:#050708;color:#f4f7f8;min-height:100vh">
-      <h1>AI For DJs Global</h1>
-      <p>Practical AI tools, workflows, prompts and education built for working DJs.</p>
-      <h2>Start Here</h2>
-      <ul>
-        <li><a href="/analyzer">AI Track Analyzer</a></li>
-        <li><a href="/chat">AI Chat for DJs</a></li>
-        <li><a href="/contract">DJ Contract Generator</a></li>
-        <li><a href="/event-brief">Event Brief Generator</a></li>
-        <li><a href="/prompts">AI Prompt Library</a></li>
-        <li><a href="/tools">AI Tools Directory</a></li>
-        <li><a href="/playbook">The DJ's AI Playbook</a></li>
-        <li><a href="/blog">Field Notes</a></li>
-      </ul>
-    </main>
-  </noscript>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/styles.css">
+<script src="_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/_ds_bundle.js"></script>
+<style>
+  :root { --gut: calc(var(--space-8) * 2); --sec: calc(var(--space-8) * 4); --stack: calc(var(--space-8) * 1.5); }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden; }
+  a { color: var(--color-accent-300); text-decoration: none; transition: color .25s ease; }
+  a:hover { color: var(--color-accent); }
+</style>
+</helmet>
+
+<div style="background: var(--color-bg); min-height: 100vh;">
+  <dc-import name="SiteNav" active="lineage" hint-size="100%,58px"></dc-import>
+
+  <section style="padding: calc(var(--space-8) * 3.5) var(--gut) var(--stack); max-width: 1360px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; gap: var(--space-4); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-neutral-400); margin-bottom: var(--stack);">
+      <span style="width: 34px; height: 1px; background: var(--color-accent);"></span>
+      Know where you're standing
+    </div>
+    <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(38px, 5.6vw, 82px); line-height: 0.95; letter-spacing: -0.045em; margin: 0 0 var(--stack);">DJ Lineage</h1>
+    <p style="font-size: clamp(16px, 1.4vw, 19px); line-height: 1.6; color: var(--color-neutral-300); max-width: 58ch; margin: 0;">
+      Every technique in your set was invented by someone. This is the short history of the job — told so you can hear it in what you play.
+    </p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1000px; margin: 0 auto;">
+    <div style="border-top: 1px solid var(--color-neutral-800);">
+      <div style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: var(--space-8); padding: calc(var(--space-8) * 1.4) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 24px; letter-spacing: -0.02em; color: var(--color-accent-300);">1940s</div>
+        <div>
+          <div style="font-family: var(--font-heading); font-weight: 500; font-size: 21px; letter-spacing: -0.02em; margin-bottom: 10px;">The record becomes the act</div>
+          <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0;">Jamaican sound systems and European discothèques arrive at the same idea from opposite directions: a person playing records can move a crowd as hard as a band. Selection becomes a craft with a reputation attached.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: var(--space-8); padding: calc(var(--space-8) * 1.4) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 24px; letter-spacing: -0.02em; color: var(--color-accent-300);">1970s</div>
+        <div>
+          <div style="font-family: var(--font-heading); font-weight: 500; font-size: 21px; letter-spacing: -0.02em; margin-bottom: 10px;">The break, the loop, the mix</div>
+          <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0;">In the Bronx, the break gets isolated and extended with two copies of the same record — and dancers get a form of their own. Downtown, disco DJs perfect the seamless blend and the programmed night. Both inventions are still the backbone of the job.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: var(--space-8); padding: calc(var(--space-8) * 1.4) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 24px; letter-spacing: -0.02em; color: var(--color-accent-300);">1980s</div>
+        <div>
+          <div style="font-family: var(--font-heading); font-weight: 500; font-size: 21px; letter-spacing: -0.02em; margin-bottom: 10px;">Turntablism and crews</div>
+          <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0;">Scratching, transforming and beat juggling turn the turntable into an instrument. Crews carry a city's name — The Floorlords Crew founded in Boston in 1981 — and battles set the standard everyone else practises against.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: var(--space-8); padding: calc(var(--space-8) * 1.4) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 24px; letter-spacing: -0.02em; color: var(--color-accent-300);">1990s</div>
+        <div>
+          <div style="font-family: var(--font-heading); font-weight: 500; font-size: 21px; letter-spacing: -0.02em; margin-bottom: 10px;">The DJ as headliner</div>
+          <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0;">House and techno build a global circuit; the mixtape becomes a distribution system; the DJ's name goes above the venue's. Residencies teach a generation how to program a whole night rather than a set.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: var(--space-8); padding: calc(var(--space-8) * 1.4) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 24px; letter-spacing: -0.02em; color: var(--color-accent-300);">2000s</div>
+        <div>
+          <div style="font-family: var(--font-heading); font-weight: 500; font-size: 21px; letter-spacing: -0.02em; margin-bottom: 10px;">Digital, and the argument about it</div>
+          <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0;">Timecode vinyl, then controllers, then sync. Every step gets called cheating by someone, and every step gets absorbed once the people using it prove they can still read a room. The pattern is worth remembering now.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: var(--space-8); padding: calc(var(--space-8) * 1.4) 0; border-bottom: 1px solid var(--color-neutral-800);">
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 24px; letter-spacing: -0.02em; color: var(--color-accent-300);">Now</div>
+        <div>
+          <div style="font-family: var(--font-heading); font-weight: 500; font-size: 21px; letter-spacing: -0.02em; margin-bottom: 10px;">AI joins the toolkit</div>
+          <p style="color: var(--color-neutral-400); font-size: 15px; line-height: 1.7; margin: 0;">Stems, key detection, research, admin. The same argument, the same answer: the tool does the work nobody claps for, and the floor still belongs to whoever can read it. That's the whole thesis of <a href="Playbook.dc.html">the Playbook</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pioneers" style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); margin-bottom: var(--space-6);">
+      <span style="font-size: 11px; letter-spacing: 0.2em; color: var(--color-accent);">01</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(30px, 4vw, 56px); letter-spacing: -0.035em; margin: 0;">The DJs who paved the way</h2>
+    </div>
+    <p style="color: var(--color-neutral-400); max-width: 62ch; margin: 0 0 calc(var(--space-8) * 2); font-size: 16px; line-height: 1.7;">
+      Not a ranking. These are the people whose inventions you use every time you play — grouped by what they gave the job.
+    </p>
+
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">The sound systems · selection as a craft</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6) calc(var(--space-8) * 2); padding: var(--stack) 0 calc(var(--space-8) * 2);">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Coxsone Dodd</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Downbeat sound system, Kingston. Turned exclusive records into a competitive advantage — the first version of the dubplate edge.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Duke Reid</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The Trojan sound system. Set the template of the selector as showman, MC and promoter in one person.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">King Tubby</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Made the mixing desk an instrument. Dub versions and live remixing are the direct ancestors of every edit you play today.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">U-Roy</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Toasting over the rhythm — the line that runs straight to MCing and to the DJ-plus-mic format mobile DJs still work in.</p>
+      </div>
+    </div>
+
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">The New York discos · the seamless night</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6) calc(var(--space-8) * 2); padding: var(--stack) 0 calc(var(--space-8) * 2);">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">David Mancuso</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The Loft. Proved a party could be built around sound quality and programming rather than spectacle — and invented the private-party model.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Francis Grasso</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Beatmatching and the slip-cue. Before him you played records; after him you mixed them.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Nicky Siano</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The Gallery. Three-deck play and the art of the long, deliberate build — set structure as a story.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Larry Levan</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Paradise Garage. The standard for reading a room and for a residency that shapes a whole city's taste.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Walter Gibbons</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The first commercially released 12" remix. Made the DJ's edit a product, not just a party trick.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Tom Moulton</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Invented the extended mix and the break-down-and-build arrangement DJs needed. Every long intro exists because of him.</p>
+      </div>
+    </div>
+
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">The Bronx · the break and the crew</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6) calc(var(--space-8) * 2); padding: var(--stack) 0 calc(var(--space-8) * 2);">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">DJ Kool Herc</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The merry-go-round: two copies, one break, extended for the dancers. Hip hop starts at that decision.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Afrika Bambaataa</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Zulu Nation and the widest crate anyone had heard — proof that genre is a shelf label, not a rule for a floor.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Grandmaster Flash</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Cutting on the beat, the clock theory, the quick-mix. He made the two-turntable set-up a precision instrument.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Grand Wizzard Theodore</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The scratch. One accident, handled with curiosity, became a technique the whole world copied.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Grandmaster Caz</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Cold Crush Brothers. The DJ-and-MC show as written, rehearsed performance rather than improvisation.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Jazzy Jay</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Zulu Nation DJ and early Def Jam engine room — the bridge from park jams to records that sold.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Grandmixer DXT</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Put the turntable on a Grammy stage with "Rockit" and made scratching legible to musicians everywhere.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Kool DJ Red Alert &amp; Chuck Chillout</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Radio as a national crate. The mix show turned local sets into everybody's education.</p>
+      </div>
+    </div>
+
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Turntablism · the deck as instrument</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6) calc(var(--space-8) * 2); padding: var(--stack) 0 calc(var(--space-8) * 2);">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">DJ Cash Money</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The transformer scratch and the standard for battle routines built like compositions.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">DJ Jazzy Jeff</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Chirp scratching, and the rarest thing in the craft: a battle technician who is also a masterful party DJ.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">DJ Premier &amp; Marley Marl</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Took the DJ's ear for a break into the studio and invented modern sampling production.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">DJ Q-Bert &amp; Invisibl Skratch Piklz</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Built scratching into a documented technical language — crabs, flares, tears — that could be taught.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Mix Master Mike</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Carried turntablism onto arena stages with the Beastie Boys and kept it a live discipline.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Rob Swift &amp; The X-Ecutioners</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The turntable crew as ensemble — routines arranged in parts, like a band.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">DJ Craze</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Three consecutive world titles, then a second career proving battle skill translates to club floors.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Spinderella &amp; Jazzy Joyce</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Held the front line for women in a scene that had to be forced to make room, and set the bar while doing it.</p>
+      </div>
+    </div>
+
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Chicago &amp; Detroit · house and techno</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6) calc(var(--space-8) * 2); padding: var(--stack) 0 calc(var(--space-8) * 2);">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Frankie Knuckles</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The Warehouse. Reworked records with a drum machine and tape until a new genre was named after the room.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Ron Hardy</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Music Box. The most fearless programming in the city — and the reason Chicago's floors expected intensity.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">The Belleville Three</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Juan Atkins, Derrick May and Kevin Saunderson built techno out of Detroit and exported it to the world.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">The Electrifying Mojo</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Detroit radio that refused format. He gave a whole generation permission to mix Kraftwerk with Parliament.</p>
+      </div>
+    </div>
+
+    <div style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-neutral-800);">Mixtapes, radio and the road</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6) calc(var(--space-8) * 2); padding: var(--stack) 0 calc(var(--space-8) * 2);">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Kid Capri</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">The mixtape as a personality-driven product. Voice on the tape, name on the street.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">Funkmaster Flex</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Turned the radio mix show into an event that could break a record nationally in one night.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">DJ Clue &amp; Ron G</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Exclusives and blends as a distribution system years before streaming did the same job.</p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; letter-spacing: -0.02em;">The Floorlords Crew</div>
+        <p style="color: var(--color-neutral-400); font-size: 14px; line-height: 1.7; margin: 8px 0 0;">Boston, founded 1981. The crew this site's founder came up in — and proof that the lineage runs through every city, not just New York.</p>
+      </div>
+    </div>
+
+    <p style="color: var(--color-neutral-500); font-size: 14px; line-height: 1.7; margin: 0; max-width: 62ch;">
+      Someone missing who should be here? <a href="mailto:Lino@infoleanskee.com">Tell me who and why</a> — this page is meant to grow.
+    </p>
+  </section>
+
+  <section style="padding: 0 var(--gut) var(--sec); max-width: 1360px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--gut); align-items: center; border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); padding: calc(var(--space-8) * 1.6); background: linear-gradient(120deg, var(--color-accent-900), transparent 70%);">
+      <div>
+        <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(22px, 2.6vw, 34px); letter-spacing: -0.035em; margin: 0 0 var(--space-4);">Learn the craft properly</h2>
+        <p style="color: var(--color-neutral-300); line-height: 1.65; margin: 0; max-width: 46ch; font-size: 15px;">Schools, mentors and the gear that's actually worth your money.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: var(--space-4);">
+        <a class="btn btn-primary" href="Schools.dc.html" style="padding: 12px 20px; font-size: 14px;">DJ schools directory</a>
+        <a class="btn btn-ghost" href="Equipment.dc.html" style="font-size: 14px;">Equipment guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
 </body>
 </html>
