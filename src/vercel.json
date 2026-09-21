@@ -4,8 +4,84 @@
   "outputDirectory": ".",
   "rewrites": [
     {
-      "source": "/((?!assets/|images/|videos/).*)",
-      "destination": "/index.html"
+      "source": "/blog/namm-2026",
+      "destination": "/NAMM2026.dc.html"
+    },
+    {
+      "source": "/blog/namm-2026/",
+      "destination": "/NAMM2026.dc.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/Blog.dc.html"
+    },
+    {
+      "source": "/blog/",
+      "destination": "/Blog.dc.html"
+    },
+    {
+      "source": "/playbook",
+      "destination": "/Playbook.dc.html"
+    },
+    {
+      "source": "/playbook/",
+      "destination": "/Playbook.dc.html"
+    },
+    {
+      "source": "/tools",
+      "destination": "/Tools.dc.html"
+    },
+    {
+      "source": "/tools/",
+      "destination": "/Tools.dc.html"
+    },
+    {
+      "source": "/prompts",
+      "destination": "/Prompts.dc.html"
+    },
+    {
+      "source": "/prompts/",
+      "destination": "/Prompts.dc.html"
+    },
+    {
+      "source": "/workflow",
+      "destination": "/Workflow.dc.html"
+    },
+    {
+      "source": "/workflows",
+      "destination": "/Workflow.dc.html"
+    },
+    {
+      "source": "/analyzer",
+      "destination": "/Analyzer.dc.html"
+    },
+    {
+      "source": "/chat",
+      "destination": "/Chat.dc.html"
+    },
+    {
+      "source": "/contract",
+      "destination": "/Contract.dc.html"
+    },
+    {
+      "source": "/event-brief",
+      "destination": "/EventBrief.dc.html"
+    },
+    {
+      "source": "/lineage",
+      "destination": "/Lineage.dc.html"
+    },
+    {
+      "source": "/schools",
+      "destination": "/Schools.dc.html"
+    },
+    {
+      "source": "/equipment",
+      "destination": "/Equipment.dc.html"
+    },
+    {
+      "source": "/merch",
+      "destination": "/Merch.dc.html"
     }
   ]
 }
