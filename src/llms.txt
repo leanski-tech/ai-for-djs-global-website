@@ -6,3 +6,9 @@
 - [DJ Playbook](https://aifordjsglobal.com/playbook): Repeatable systems for bookings and marketing.
 - [ChatGPT for DJs](https://aifordjsglobal.com): Prompts and workflows for music businesses.
 - [DJ Business Automation](https://aifordjsglobal.com): Remote coaching and setup.
+
+
+## Blog
+- [Field Notes — AI for DJs Blog](https://aifordjsglobal.com/blog): AI DJ tools, workflows, hardware, stems, bookings, marketing, and business automation.
+- [AI DJ Workflows for Pioneer, Denon, and Rane](https://aifordjsglobal.com/blog/ai-dj-workflows-pioneer-denon-rane): Practical AI preparation and performance workflows for rekordbox, Engine DJ, Serato, stems, and modern DJ hardware.
+- [NAMM 2026 DJ Gear and AI](https://aifordjsglobal.com/blog/namm-2026): What new DJ hardware means for AI-assisted DJ workflows.
