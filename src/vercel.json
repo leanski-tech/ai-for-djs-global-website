@@ -4,6 +4,14 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/content-machine",
+      "destination": "/content-machine/index.html"
+    },
+    {
+      "source": "/content-machine/",
+      "destination": "/content-machine/index.html"
+    },
+    {
       "source": "/blog/namm-2026",
       "destination": "/NAMM2026.dc.html"
     },

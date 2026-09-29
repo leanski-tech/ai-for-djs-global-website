@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#050b14" />
+  <title>Content Machine | AI For DJs Global</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/content-machine/style.css" />
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="/">AI FOR DJS <i>GLOBAL</i></a>
+    <span class="private"><b></b> Private preview</span>
+  </header>
+  <main>
+    <div class="intro">
+      <span class="eyebrow">LEANSKEE CONTENT MACHINE</span>
+      <h1>One idea. One finished post.</h1>
+      <p>Nothing posts automatically. You review everything first.</p>
+    </div>
+    <nav class="tabs" aria-label="Content Machine">
+      <button class="tab active" data-view="create">1. Create</button>
+      <button class="tab" data-view="queue">2. Queue <b id="queueCount">0</b></button>
+    </nav>
+    <section class="view active" id="view-create">
+      <form class="card" id="contentForm">
+        <div class="card-title"><span>1</span><div><h2>What do you want to talk about?</h2><p>Keep it simple. One topic is enough.</p></div></div>
+        <label>Topic<textarea id="topic" required placeholder="Example: AI helps DJs with business work—not creativity"></textarea></label>
+        <div class="row">
+          <label>Brand<select id="brandSelect"><option>AI For DJs Global</option><option>DJ Leanskee</option><option>Endless Styles</option><option>Floorlords</option></select></label>
+          <label>Goal<select id="goal"><option value="awareness">Build awareness</option><option value="traffic">Send people to the website</option><option value="sales">Promote an offer</option><option value="education">Teach something useful</option></select></label>
+        </div>
+        <label class="photo">Optional picture<input type="file" id="mediaInput" accept="image/*" /><span id="photoLabel">Choose a picture</span></label>
+        <details>
+          <summary>Writing preferences</summary>
+          <label>Your voice<textarea id="voice">Authentic, direct, experienced and encouraging. Short paragraphs. No tech hype.</textarea></label>
+          <label>Call to action<input id="cta" value="Visit aifordjsglobal.com" /></label>
+        </details>
+        <button class="button primary" type="submit">Create my post</button>
+      </form>
+      <section class="card result-card" id="resultCard" hidden>
+        <div class="card-title"><span>2</span><div><h2>Review your post</h2><p>Edit anything you want before saving it.</p></div></div>
+        <img id="mediaPreview" alt="Selected content preview" hidden />
+        <label>Post<textarea id="captionOut" class="post-box"></textarea></label>
+        <label>Hashtags<input id="hashtagsOut" /></label>
+        <details>
+          <summary>Video script and visual notes</summary>
+          <label>Short video script<textarea id="scriptOut" class="script-box"></textarea></label>
+          <label>Visual direction<textarea id="visualOut"></textarea></label>
+        </details>
+        <div class="actions">
+          <button class="button secondary" id="copyPack" type="button">Copy for Blotato</button>
+          <button class="button primary" id="addQueue" type="button">Save to queue</button>
+        </div>
+      </section>
+    </section>
+    <section class="view" id="view-queue">
+      <div class="queue-head"><div><span class="eyebrow">NEXT FIVE DAYS</span><h2>Approved posts</h2></div><button class="button secondary" id="downloadAll">Download all</button></div>
+      <div id="queueGrid"></div>
+      <p class="queue-note">Saved on this device only. Blotato connection comes after you approve the layout.</p>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/content-machine/app.js"></script>
+</body>
+</html>
