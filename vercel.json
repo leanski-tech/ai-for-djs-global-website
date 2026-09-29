@@ -4,6 +4,14 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/content-machine",
+      "destination": "/content-machine/index.html"
+    },
+    {
+      "source": "/content-machine/",
+      "destination": "/content-machine/index.html"
+    },
+    {
       "source": "/((?!assets/|images/|videos/).*)",
       "destination": "/index.html"
     }
