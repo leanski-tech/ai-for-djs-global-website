@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#050708" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI For DJs" />
+  <meta name="description" content="Practical AI tools and business workflows built for working DJs." />
+  <title>AI For DJs Global App</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/app-icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/app-icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/app/app.css" />
+</head>
+<body>
+  <header class="app-head">
+    <a class="brand" href="/app/" aria-label="AI For DJs Global app home">
+      <img src="/app-icon-192.png" alt="" />
+      <span>AI FOR DJS <i>GLOBAL</i></span>
+    </a>
+    <span class="preview">APP PREVIEW</span>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">SMARTER TOOLS. STRONGER DJS.</p>
+      <h1>What do you need today?</h1>
+      <p>Choose one tool. Your DJ skills stay in charge.</p>
+    </section>
+
+    <nav class="tabs" aria-label="App sections">
+      <button class="tab active" data-tab="today" type="button">Today</button>
+      <button class="tab" data-tab="tools" type="button">DJ Tools</button>
+    </nav>
+
+    <section class="panel active" id="today" aria-labelledby="today-tab">
+      <div class="action-grid">
+        <a class="action primary" href="/chat"><span>Ask AI</span><small>Get help with DJ business and planning</small></a>
+        <a class="action" href="/analyzer"><span>Analyze a Track</span><small>Key, BPM, energy and transition ideas</small></a>
+        <a class="action" href="/event-brief"><span>Build an Event Brief</span><small>Turn gig details into a clear plan</small></a>
+        <a class="action" href="/contract"><span>Create a Contract</span><small>Prepare professional DJ terms</small></a>
+      </div>
+
+      <section class="install-card" id="installCard">
+        <div>
+          <p class="eyebrow">PUT IT ON YOUR PHONE</p>
+          <h2>Install the app</h2>
+          <p>It opens full-screen and updates whenever the website is updated.</p>
+        </div>
+        <button class="install-button" id="installButton" type="button">Install App</button>
+      </section>
+    </section>
+
+    <section class="panel" id="tools">
+      <div class="tool-list">
+        <a href="/prompts"><span>Prompt Library</span><small>30+ practical prompts for working DJs</small></a>
+        <a href="/workflow"><span>Business Checklist</span><small>Bookings, follow-ups and weekly organization</small></a>
+        <a href="/equipment"><span>DJ Equipment</span><small>Accurate battle-style setups and gear guidance</small></a>
+        <a href="/tools"><span>AI Tools Directory</span><small>Reviewed tools that earn a place in a DJ's week</small></a>
+        <a href="/playbook"><span>The DJ's AI Playbook</span><small>Learn where AI saves time without replacing craft</small></a>
+        <a href="/blog"><span>Field Notes</span><small>Current DJ technology, business and culture</small></a>
+      </div>
+    </section>
+  </main>
+
+  <div class="install-help" id="installHelp" hidden>
+    <div role="dialog" aria-modal="true" aria-labelledby="installTitle">
+      <button class="close" id="closeHelp" type="button" aria-label="Close">×</button>
+      <h2 id="installTitle">Install on iPhone</h2>
+      <ol><li>Tap the Share button in Safari.</li><li>Choose <b>Add to Home Screen</b>.</li><li>Tap <b>Add</b>.</li></ol>
+    </div>
+  </div>
+
+  <div class="update-toast" id="updateToast" hidden>App updated.</div>
+  <script src="/app/app.js"></script>
+</body>
+</html>

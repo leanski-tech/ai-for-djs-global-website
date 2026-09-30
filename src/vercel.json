@@ -4,6 +4,22 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/app",
+      "destination": "/app/index.html"
+    },
+    {
+      "source": "/app/",
+      "destination": "/app/index.html"
+    },
+    {
+      "source": "/get-app",
+      "destination": "/get-app/index.html"
+    },
+    {
+      "source": "/get-app/",
+      "destination": "/get-app/index.html"
+    },
+    {
       "source": "/blog/namm-2026",
       "destination": "/NAMM2026.dc.html"
     },
