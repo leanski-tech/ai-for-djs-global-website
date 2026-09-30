@@ -53,7 +53,7 @@
       <button class="btn btn-secondary" data-chip style="font-size: 13px;">How do I read a room that won't dance?</button>
       <button class="btn btn-secondary" data-chip style="font-size: 13px;">What goes in a DJ contract?</button>
     </div>
-    <p style="font-size: 12px; color: var(--color-neutral-500); margin: var(--stack) 0 0;">Demo responses on this redesign — point this panel at your live Gemini endpoint for the real assistant.</p>
+    <p style="font-size: 12px; color: var(--color-neutral-500); margin: var(--stack) 0 0;">AI can make mistakes. Verify exact gear specifications, prices, and legal advice before relying on them.</p>
   </section>
 
   <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
@@ -61,6 +61,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
+  constructor() { super(); this.history = []; this.busy = false; }
   componentDidMount() { this.bind(); this._mo = new MutationObserver(() => this.bind()); this._mo.observe(document.body, { childList: true, subtree: true }); }
   componentWillUnmount() { if (this._mo) this._mo.disconnect(); }
   bind() {
@@ -80,22 +81,26 @@ class Component extends DCLogic {
       c.addEventListener("click", () => this.ask(c.textContent.trim()));
     });
   }
-  async askClaude(q) {
-    const sys = "You are the AI Chat assistant on AI For DJs Global, a site for working DJs and event producers. Answer questions about DJing technique, gear, business, pricing, contracts and marketing in a direct, concrete, no-fluff voice — like a DJ with decades of experience talking to another DJ. Keep answers under 140 words. No emoji, no generic AI disclaimers.";
-    if (window.claude && window.claude.complete) {
-      try {
-        return await window.claude.complete({ system: sys, messages: [{ role: "user", content: q }], max_tokens: 400 });
-      } catch (e) { return "Couldn't reach the AI just now — try again in a moment."; }
-    }
-    return "AI connection unavailable in this preview.";
+  async askAI(q) {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: q, history: this.history.slice(-8) })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.error || "The AI is temporarily unavailable. Please try again.");
+    return data.answer;
   }
-  ask(text) {
+  async ask(text) {
     const q = (text || "").trim();
-    if (!q) return;
+    if (!q || this.busy) return;
     const log = document.querySelector("[data-log]");
     const input = document.querySelector("[data-input]");
     if (!log) return;
-    if (input) input.value = "";
+    const send = document.querySelector("[data-send]");
+    if (input) { input.value = ""; input.disabled = true; }
+    if (send) { send.disabled = true; send.textContent = "Thinking…"; }
+    this.busy = true;
     const mk = (role, body, mine) => {
       const wrap = document.createElement("div");
       wrap.style.display = "grid";
@@ -114,7 +119,19 @@ class Component extends DCLogic {
     };
     mk("You", q, true);
     const b = mk("Assistant", "…", false);
-    this.askClaude(q).then((answer) => { b.textContent = answer; log.scrollTop = log.scrollHeight; });
+    try {
+      const previousHistory = this.history.slice(-8);
+      const answer = await this.askAI(q);
+      b.textContent = answer;
+      this.history = [...previousHistory, { role: "user", content: q }, { role: "assistant", content: answer }].slice(-8);
+    } catch (error) {
+      b.textContent = error.message || "The AI is temporarily unavailable. Please try again.";
+    } finally {
+      this.busy = false;
+      if (input) { input.disabled = false; input.focus(); }
+      if (send) { send.disabled = false; send.textContent = "Send"; }
+      log.scrollTop = log.scrollHeight;
+    }
   }
 }
 </script>
