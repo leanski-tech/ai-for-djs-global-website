@@ -1,5 +1,61 @@
 let deferredInstallPrompt = null;
 
+function isStandaloneApp() {
+  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+}
+
+function installAppShell() {
+  if (!isStandaloneApp() || document.querySelector('[data-afdj-app-shell]')) return;
+
+  document.body.classList.add('is-standalone-app');
+
+  const style = document.createElement('style');
+  style.dataset.afdjAppShell = '1';
+  style.textContent = `
+    body.is-standalone-app{padding-bottom:calc(76px + env(safe-area-inset-bottom));overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent}
+    body.is-standalone-app .afdj-web-header{display:none!important}
+    .afdj-app-top{position:sticky;top:0;z-index:9000;height:calc(58px + env(safe-area-inset-top));padding:env(safe-area-inset-top) 18px 0;box-sizing:border-box;display:flex;align-items:center;gap:11px;background:color-mix(in srgb,var(--color-bg,#161826) 92%,transparent);border-bottom:1px solid rgba(255,255,255,.09);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+    .afdj-app-top img{width:30px;height:30px;border-radius:8px;box-shadow:0 0 20px rgba(145,132,217,.25)}
+    .afdj-app-brand{display:grid;line-height:1.05}.afdj-app-brand b{font:600 14px/1.1 Inter,system-ui,sans-serif;letter-spacing:.02em;color:var(--color-text,#f4f3f8)}.afdj-app-brand span{margin-top:3px;font:500 9px/1 Inter,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--color-neutral-500,#9397ab)}
+    .afdj-app-nav{position:fixed;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom));z-index:9000;min-height:64px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;padding:5px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:color-mix(in srgb,var(--color-surface,#232532) 94%,transparent);box-shadow:0 16px 46px rgba(0,0,0,.45);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    .afdj-app-nav a{min-height:52px;display:grid;place-items:center;align-content:center;gap:4px;border-radius:13px;color:var(--color-neutral-500,#9397ab)!important;text-decoration:none!important;font:600 10px/1 Inter,system-ui,sans-serif;touch-action:manipulation}
+    .afdj-app-nav a svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .afdj-app-nav a[aria-current="page"]{background:rgba(145,132,217,.16);color:var(--color-accent-300,#d2cefd)!important}
+    body.is-standalone-app button,body.is-standalone-app a{touch-action:manipulation}
+    @media (min-width:760px){.afdj-app-nav{left:50%;right:auto;width:430px;transform:translateX(-50%)}}
+  `;
+  document.head.appendChild(style);
+
+  const shell = document.createElement('div');
+  shell.dataset.afdjAppShell = '1';
+  shell.innerHTML = `
+    <div class="afdj-app-top">
+      <img src="/app-icon-192.png" alt="">
+      <div class="afdj-app-brand"><b>AI For DJs Global</b><span>DJ tools and workflows</span></div>
+    </div>
+    <nav class="afdj-app-nav" aria-label="App navigation">
+      <a href="/" data-app-route="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.4a.8.8 0 0 1-.8.8H3.8a.8.8 0 0 1-.8-.8Z"/><path d="M9 21v-7h6v7"/></svg><span>Home</span></a>
+      <a href="/chat" data-app-route="chat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a3 3 0 0 1-3 3H9l-5 3v-6a3 3 0 0 1-1-2.2V7a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3Z"/><path d="M8 9h8M8 13h5"/></svg><span>AI Chat</span></a>
+      <a href="/analyzer" data-app-route="analyzer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19V3"/></svg><span>Analyze</span></a>
+      <a href="/tools" data-app-route="tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg><span>Tools</span></a>
+    </nav>
+  `;
+  document.body.prepend(shell);
+
+  const path = window.location.pathname.toLowerCase();
+  const route = path.includes('chat') ? 'chat' : path.includes('analyzer') ? 'analyzer' : path.includes('tool') || path.includes('prompt') || path.includes('contract') || path.includes('event-brief') ? 'tools' : 'home';
+  shell.querySelector(`[data-app-route="${route}"]`)?.setAttribute('aria-current', 'page');
+
+  const hideWebsiteHeader = () => {
+    document.querySelectorAll('header').forEach((header) => {
+      if (header.querySelector('a[href*="Home.dc.html"],a[href="/"],a[href="./"]')) header.classList.add('afdj-web-header');
+    });
+  };
+  hideWebsiteHeader();
+  const observer = new MutationObserver(hideWebsiteHeader);
+  observer.observe(document.body, { childList: true, subtree: true });
+}
+
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
   deferredInstallPrompt = event;
@@ -20,7 +76,7 @@ function showInstallGuide() {
   const params = new URLSearchParams(window.location.search);
   if (params.get('install') !== '1') return;
 
-  const standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  const standalone = isStandaloneApp();
   const isiPhone = /iPhone|iPad|iPod/i.test(navigator.userAgent);
   const style = document.createElement('style');
   style.textContent = `
@@ -75,7 +131,8 @@ function showInstallGuide() {
 }
 
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', showInstallGuide);
+  document.addEventListener('DOMContentLoaded', () => { installAppShell(); showInstallGuide(); });
 } else {
+  installAppShell();
   showInstallGuide();
 }

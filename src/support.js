@@ -1908,3 +1908,11 @@
     throw err;
   });
 })();
+
+// Load the installable-app shell on every full website page.
+if (!document.querySelector('script[src="/pwa.js"]')) {
+  const appShellScript = document.createElement("script");
+  appShellScript.src = "/pwa.js";
+  appShellScript.defer = true;
+  document.head.appendChild(appShellScript);
+}
