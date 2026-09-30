@@ -2,15 +2,19 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "echo 'Static site - no build step required'",
   "outputDirectory": ".",
-  "rewrites": [
+  "redirects": [
     {
       "source": "/app",
-      "destination": "/app/index.html"
+      "destination": "/?install=1",
+      "permanent": false
     },
     {
       "source": "/app/",
-      "destination": "/app/index.html"
-    },
+      "destination": "/?install=1",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/get-app",
       "destination": "/get-app/index.html"

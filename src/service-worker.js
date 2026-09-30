@@ -1,5 +1,5 @@
-const CACHE='afdj-shell-v2';
-const SHELL=['/app/','/app/app.css','/app/app.js','/manifest.webmanifest','/app-icon.svg','/app-icon-192.png','/app-icon-512.png'];
+const CACHE='afdj-site-v3';
+const SHELL=['/','/support.js','/pwa.js','/_ds/nocturne-b2e0e341-ba86-427b-aed1-13b3aaf3363d/styles.css','/manifest.webmanifest','/app-icon.svg','/app-icon-192.png','/app-icon-512.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));
 });
@@ -13,7 +13,7 @@ self.addEventListener('fetch',event=>{
   if(event.request.mode==='navigate'){
     event.respondWith(fetch(event.request).then(response=>{
       const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));return response;
-    }).catch(()=>caches.match(event.request).then(hit=>hit||caches.match('/app/'))));
+    }).catch(()=>caches.match(event.request).then(hit=>hit||caches.match('/'))));
     return;
   }
   event.respondWith(caches.match(event.request).then(hit=>{
