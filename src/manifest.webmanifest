@@ -1,0 +1,23 @@
+{
+  "name": "AI For DJs Global",
+  "short_name": "AI For DJs",
+  "description": "Practical AI tools and business workflows built for working DJs.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone"],
+  "background_color": "#161826",
+  "theme_color": "#161826",
+  "orientation": "portrait-primary",
+  "categories": ["business", "music", "productivity"],
+  "icons": [
+    {"src":"/app-icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"/app-icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ],
+  "shortcuts": [
+    {"name":"Ask AI","url":"/chat","icons":[{"src":"/app-icon-192.png","sizes":"192x192"}]},
+    {"name":"Track Analyzer","url":"/analyzer","icons":[{"src":"/app-icon-192.png","sizes":"192x192"}]},
+    {"name":"Event Brief","url":"/event-brief","icons":[{"src":"/app-icon-192.png","sizes":"192x192"}]}
+  ]
+}

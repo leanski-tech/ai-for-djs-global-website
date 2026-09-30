@@ -2,7 +2,27 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "echo 'Static site - no build step required'",
   "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/app",
+      "destination": "/?install=1",
+      "permanent": false
+    },
+    {
+      "source": "/app/",
+      "destination": "/?install=1",
+      "permanent": false
+    }
+  ],
   "rewrites": [
+    {
+      "source": "/get-app",
+      "destination": "/get-app/index.html"
+    },
+    {
+      "source": "/get-app/",
+      "destination": "/get-app/index.html"
+    },
     {
       "source": "/blog/namm-2026",
       "destination": "/NAMM2026.dc.html"

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AI For DJs Global">
+  <rect width="512" height="512" rx="96" fill="#050708"/>
+  <rect x="34" y="34" width="444" height="444" rx="70" fill="none" stroke="#16e1ff" stroke-width="12"/>
+  <path d="M124 354 220 142h43l96 212h-57l-18-45H198l-18 45zm95-96h45l-22-58z" fill="#f6f8f9"/>
+  <path d="M371 142h43v212h-43z" fill="#16e1ff"/>
+</svg>
