@@ -1,4 +1,4 @@
-const CACHE='afdj-shell-v1';
+const CACHE='afdj-shell-v2';
 const SHELL=['/app/','/app/app.css','/app/app.js','/manifest.webmanifest','/app-icon.svg','/app-icon-192.png','/app-icon-512.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));
