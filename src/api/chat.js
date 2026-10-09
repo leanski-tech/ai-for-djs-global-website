@@ -16,6 +16,7 @@ function cleanHistory(history) {
 }
 
 module.exports = async function handler(req, res) {
+  res.setHeader("Cache-Control", "no-store");
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
     return res.status(405).json({ error: "Method not allowed." });
@@ -24,7 +25,11 @@ module.exports = async function handler(req, res) {
   const message = String(req.body?.message || "").trim().slice(0, 2000);
   if (!message) return res.status(400).json({ error: "Type a question first." });
 
-  const token = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN;
+  // Vercel supplies a fresh OIDC token in the request at runtime;
+  // VERCEL_OIDC_TOKEN is only guaranteed during builds/local development.
+  const token = process.env.AI_GATEWAY_API_KEY
+    || req.headers?.["x-vercel-oidc-token"]
+    || process.env.VERCEL_OIDC_TOKEN;
   if (!token) {
     return res.status(503).json({ error: "The AI connection is not configured yet." });
   }
