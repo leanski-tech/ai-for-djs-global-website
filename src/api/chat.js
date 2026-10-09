@@ -42,7 +42,7 @@ module.exports = async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "google/gemini-3.6-flash",
+        model: "anthropic/claude-haiku-4.5",
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           ...cleanHistory(req.body?.history),
