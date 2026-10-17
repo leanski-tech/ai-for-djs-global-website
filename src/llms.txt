@@ -2,13 +2,24 @@
 > AI tools, playbooks, and training that help DJs and event promoters run their business — built in Hawaii, serving DJs worldwide.
 
 ## Topics
-- [AI DJ Tools](https://aifordjsglobal.com): Automation and assistants for working DJs.
-- [DJ Playbook](https://aifordjsglobal.com/playbook): Repeatable systems for bookings and marketing.
-- [ChatGPT for DJs](https://aifordjsglobal.com): Prompts and workflows for music businesses.
-- [DJ Business Automation](https://aifordjsglobal.com): Remote coaching and setup.
+- [AI DJ Tools](https://www.aifordjsglobal.com): Automation and assistants for working DJs.
+- [DJ Playbook](https://www.aifordjsglobal.com/playbook): Repeatable systems for bookings and marketing.
+- [ChatGPT for DJs](https://www.aifordjsglobal.com): Prompts and workflows for music businesses.
+- [DJ Business Automation](https://www.aifordjsglobal.com): Remote coaching and setup.
 
 
 ## Blog
-- [Field Notes — AI for DJs Blog](https://aifordjsglobal.com/blog): AI DJ tools, workflows, hardware, stems, bookings, marketing, and business automation.
-- [AI DJ Workflows for Pioneer, Denon, and Rane](https://aifordjsglobal.com/blog/ai-dj-workflows-pioneer-denon-rane): Practical AI preparation and performance workflows for rekordbox, Engine DJ, Serato, stems, and modern DJ hardware.
-- [NAMM 2026 DJ Gear and AI](https://aifordjsglobal.com/blog/namm-2026): What new DJ hardware means for AI-assisted DJ workflows.
+- [Field Notes — AI for DJs Blog](https://www.aifordjsglobal.com/blog): AI DJ tools, workflows, hardware, stems, bookings, marketing, and business automation.
+- [AI DJ Workflows for Pioneer, Denon, and Rane](https://www.aifordjsglobal.com/blog/ai-dj-workflows-pioneer-denon-rane): Practical AI preparation and performance workflows for rekordbox, Engine DJ, Serato, stems, and modern DJ hardware.
+- [NAMM 2026 DJ Gear and AI](https://www.aifordjsglobal.com/blog/namm-2026): What new DJ hardware means for AI-assisted DJ workflows.
+
+## Free tools
+- [AI Track Analyzer](https://www.aifordjsglobal.com/analyzer): Harmonic mixing advice and next-track ideas from track, BPM and key.
+- [AI Chat for DJs](https://www.aifordjsglobal.com/chat): Free AI assistant for DJ questions.
+- [DJ Contract Generator](https://www.aifordjsglobal.com/contract): Builds a DJ performance contract.
+- [Event Brief Generator](https://www.aifordjsglobal.com/event-brief): Plans timeline, music lists and contacts for a gig.
+- [AI Prompt Library](https://www.aifordjsglobal.com/prompts): 30+ copy-paste prompts for DJ businesses.
+- [AI Tools Directory](https://www.aifordjsglobal.com/tools): AI tools for DJs reviewed by a working DJ.
+
+## About
+Founded by DJ Leanskee (Lino Delgado), Honolulu, Hawaii. Founding member of the Classic Floorlords (Boston, 1981), 30+ years as a DJ. Book DJ Leanskee: https://www.djleanskee.com/ . Contact: lino@infoleanskee.com
