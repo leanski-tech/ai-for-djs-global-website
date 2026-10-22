@@ -4,6 +4,10 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/gear-report-october-21-2026.html",
+      "destination": "/gear-report-october-21-2026.html"
+    },
+    {
       "source": "/((?!assets/|images/|videos/).*)",
       "destination": "/index.html"
     }
