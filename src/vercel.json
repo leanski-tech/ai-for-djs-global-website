@@ -12,6 +12,11 @@
       "source": "/app/",
       "destination": "/?install=1",
       "permanent": false
+    },
+    {
+      "source": "/gear-report-october-21-2026.html",
+      "destination": "/blog/dj-gear-report-october-2026",
+      "permanent": true
     }
   ],
   "rewrites": [
