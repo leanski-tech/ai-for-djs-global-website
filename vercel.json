@@ -4,6 +4,10 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/serato-dj-ios-sunshine-peoples-market.html",
+      "destination": "/serato-dj-ios-sunshine-peoples-market.html"
+    },
+    {
       "source": "/gear-report-october-21-2026.html",
       "destination": "/gear-report-october-21-2026.html"
     },
