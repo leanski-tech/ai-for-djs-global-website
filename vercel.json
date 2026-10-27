@@ -4,6 +4,10 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/virtualdj-2026-ai-shoutout-dj-drops.html",
+      "destination": "/virtualdj-2026-ai-shoutout-dj-drops.html"
+    },
+    {
       "source": "/serato-dj-ios-sunshine-peoples-market.html",
       "destination": "/serato-dj-ios-sunshine-peoples-market.html"
     },
@@ -12,7 +16,7 @@
       "destination": "/gear-report-october-21-2026.html"
     },
     {
-      "source": "/((?!assets/|images/|videos/).*)",
+      "source": "/((?!assets/|images/|videos/|virtualdj-2026-ai-shoutout-dj-drops\\.html$|serato-dj-ios-sunshine-peoples-market\\.html$|gear-report-october-21-2026\\.html$).*)",
       "destination": "/index.html"
     }
   ]
