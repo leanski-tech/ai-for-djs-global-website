@@ -1,3 +1,12 @@
+/* Free-tools email gate: unlock only after HubSpot confirms a successful submission. */
+(function () {
+  const paths = new Set(["/analyzer","/chat","/contract","/event-brief","/prompts","/tools","/directory","/workflow","/workflows","/analyzer.dc.html","/chat.dc.html","/contract.dc.html","/eventbrief.dc.html","/prompts.dc.html","/tools.dc.html","/workflow.dc.html"]);
+  const path = location.pathname.toLowerCase().replace(/\/index\.html$/, "").replace(/\/$/, "");
+  let unlocked = false;
+  try { unlocked = localStorage.getItem("afdj-tools-access") === "1"; } catch (_) {}
+  if (!unlocked) unlocked = document.cookie.split("; ").includes("afdj_tools_access=1");
+  if (paths.has(path) && !unlocked) location.replace("/free-tools.html?next=" + encodeURIComponent(location.pathname + location.search + location.hash));
+})();
 // GENERATED from dc-runtime/src/*.ts — do not edit. Rebuild with `cd dc-runtime && bun run build`.
 "use strict";
 (() => {
@@ -1645,7 +1654,7 @@
       const url = COMPONENT_DIR + "/" + encodeURIComponent(name) + ".dc.html";
       const res = window.__resources;
       const pre = res ? res[url] : void 0;
-      const target = typeof pre === "string" && pre ? pre : url;
+      const target = typeof pre === "string" && pre ? pre : url + "?site=signup-20261027";
       const blob = bundledBlob(target);
       (blob ? blob.text() : fetch(target).then((res2) => {
         if (!res2.ok) {
