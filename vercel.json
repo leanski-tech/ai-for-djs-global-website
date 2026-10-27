@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "echo 'Static site - no build step required'",
-  "outputDirectory": ".",
+  "buildCommand": "mkdir -p dist && find . -mindepth 1 -maxdepth 1 ! -name dist ! -name .git -exec cp -R {} dist/ \\;",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/virtualdj-2026-ai-shoutout-dj-drops.html",
