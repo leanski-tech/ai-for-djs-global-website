@@ -1,5 +1,6 @@
 /* Free-tools email gate: unlock only after HubSpot confirms a successful submission. */
 (function () {
+  if (window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true) return;
   const paths = new Set(["/analyzer","/chat","/contract","/event-brief","/prompts","/tools","/directory","/workflow","/workflows","/analyzer.dc.html","/chat.dc.html","/contract.dc.html","/eventbrief.dc.html","/prompts.dc.html","/tools.dc.html","/workflow.dc.html"]);
   const path = location.pathname.toLowerCase().replace(/\/index\.html$/, "").replace(/\/$/, "");
   let unlocked = false;
@@ -1654,7 +1655,7 @@
       const url = COMPONENT_DIR + "/" + encodeURIComponent(name) + ".dc.html";
       const res = window.__resources;
       const pre = res ? res[url] : void 0;
-      const target = typeof pre === "string" && pre ? pre : url + "?site=signup-20261027";
+      const target = typeof pre === "string" && pre ? pre : url + "?site=app-restore-20261027";
       const blob = bundledBlob(target);
       (blob ? blob.text() : fetch(target).then((res2) => {
         if (!res2.ok) {

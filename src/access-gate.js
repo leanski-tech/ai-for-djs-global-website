@@ -1,5 +1,6 @@
 /* Free-tools email gate: unlock only after HubSpot confirms a successful submission. */
 (function () {
+  if (window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true) return;
   const paths = new Set(["/analyzer","/chat","/contract","/event-brief","/prompts","/tools","/directory","/workflow","/workflows","/analyzer.dc.html","/chat.dc.html","/contract.dc.html","/eventbrief.dc.html","/prompts.dc.html","/tools.dc.html","/workflow.dc.html"]);
   const path = location.pathname.toLowerCase().replace(/\/index\.html$/, "").replace(/\/$/, "");
   let unlocked = false;
