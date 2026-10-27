@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Your free tools are ready | AI For DJs Global</title><style>:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#08131c;color:#eef8fc;font:17px/1.65 system-ui,sans-serif}main,header{max-width:850px;margin:auto;padding:24px}a{color:#56e7f7}h1{font-size:clamp(32px,5vw,52px);line-height:1.12}.form{background:#fff;border-radius:14px;padding:20px;color:#172333;min-height:250px}small{color:#b0c3cd}button,.button{display:inline-block;padding:12px 20px;border:0;border-radius:6px;background:#56e7f7;color:#08131c;font:inherit;font-weight:700;cursor:pointer}a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:4px}</style></head><body><main><h1>Your free tools are ready</h1><p id="status">Returning you to the tools…</p><p><a href="/#tools">Open the free tools</a></p></main><script>
+let started=false;try{started=sessionStorage.getItem("afdj-signup-started")==="1";}catch(_){}
+if(!started)started=document.cookie.split("; ").includes("afdj_signup_started=1");
+if(started){
+try{localStorage.setItem("afdj-tools-access","1");sessionStorage.removeItem("afdj-signup-started");}catch(_){}
+document.cookie="afdj_tools_access=1; Path=/; Max-Age=31536000; SameSite=Lax; Secure";
+document.cookie="afdj_signup_started=; Path=/; Max-Age=0; SameSite=Lax; Secure";
+let next="/#tools";try{const url=new URL(sessionStorage.getItem("afdj-tools-next")||next,location.origin);let path=url.pathname.toLowerCase();if(path.endsWith("/index.html"))path=path.slice(0,-11);if(path.endsWith("/"))path=path.slice(0,-1);if(url.origin===location.origin&&new Set(["/analyzer","/chat","/contract","/event-brief","/prompts","/tools","/directory","/workflow","/workflows","/analyzer.dc.html","/chat.dc.html","/contract.dc.html","/eventbrief.dc.html","/prompts.dc.html","/tools.dc.html","/workflow.dc.html"]).has(path))next=url.pathname+url.search+url.hash;sessionStorage.removeItem("afdj-tools-next");}catch(_){}
+location.replace(next);
+}else{document.getElementById("status").textContent="Please complete the email signup first.";document.querySelector("a").href="/free-tools.html";document.querySelector("a").textContent="Go to email signup";}
+</script></body></html>
