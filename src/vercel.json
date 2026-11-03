@@ -125,6 +125,14 @@
     {
       "destination": "/Merch.dc.html",
       "source": "/merch"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq/index.html"
+    },
+    {
+      "source": "/faq/",
+      "destination": "/faq/index.html"
     }
   ]
 }
