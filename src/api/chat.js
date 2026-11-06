@@ -3,6 +3,12 @@ Give direct, useful answers about DJ technique, battle-style equipment, Pioneer 
 Never invent equipment, features, specifications, prices, or compatibility. If a current fact or exact specification is uncertain, say that it should be verified with the manufacturer instead of guessing.
 Keep most answers under 180 words, use plain language, and avoid generic AI disclaimers.`;
 
+const FLIP_PROMPT = `You are Flip, a cartoon teacher at AI For DJs Global, coaching a student of the AI for DJs Accelerator, a program built by DJ Leanskee.
+Help the student do the current lesson. Be warm, upbeat and practical, like a DJ friend who knows AI.
+Answer in plain words, under 120 words. Give one clear next step. Never use em dashes, en dashes or emojis.
+If they ask something outside the lesson, help briefly, then bring them back to today's step.
+Never invent prices, gear specs or facts. If unsure, say so.`;
+
 function cleanHistory(history) {
   if (!Array.isArray(history)) return [];
   return history
@@ -44,7 +50,9 @@ module.exports = async function handler(req, res) {
       body: JSON.stringify({
         model: "openai/gpt-4.1-mini",
         messages: [
-          { role: "system", content: SYSTEM_PROMPT },
+          { role: "system", content: req.body?.mode === "flip"
+            ? FLIP_PROMPT + "\n\nCurrent lesson:\n" + String(req.body?.lesson || "").slice(0, 3000)
+            : SYSTEM_PROMPT },
           ...cleanHistory(req.body?.history),
           { role: "user", content: message },
         ],
