@@ -133,6 +133,14 @@
     {
       "source": "/faq/",
       "destination": "/faq/index.html"
+    },
+    {
+      "source": "/accelerator",
+      "destination": "/accelerator/index.html"
+    },
+    {
+      "source": "/accelerator/",
+      "destination": "/accelerator/index.html"
     }
   ]
 }
