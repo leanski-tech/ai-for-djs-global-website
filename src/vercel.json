@@ -143,12 +143,12 @@
       "destination": "/accelerator/index.html"
     },
     {
-      "source": "/accelerator/welcome-6ae36dd7",
-      "destination": "/accelerator/welcome-6ae36dd7/index.html"
+      "source": "/thank-you-accelerator",
+      "destination": "/thank-you-accelerator/index.html"
     },
     {
-      "source": "/accelerator/welcome-6ae36dd7/",
-      "destination": "/accelerator/welcome-6ae36dd7/index.html"
+      "source": "/thank-you-accelerator/",
+      "destination": "/thank-you-accelerator/index.html"
     }
   ]
 }
