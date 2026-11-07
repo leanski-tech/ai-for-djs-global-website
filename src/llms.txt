@@ -8,12 +8,6 @@
 - [DJ Business Automation](https://www.aifordjsglobal.com): Remote coaching and setup.
 
 
-## Programs and products
-- [AI for DJs Accelerator](https://www.aifordjsglobal.com/accelerator): A 30-day online program for working DJs. One step a day to set up an AI booking and content crew: inquiry replies, posts, and follow-ups that book more private and corporate gigs. $150, self-paced, no live class. By DJ Leanskee (Lino Delgado).
-- [AI for DJs App](https://www.aifordjsglobal.com/get-app): The AI for DJs Global app: help with booking replies, contracts, and content. $29 one-time founding price, or $46 bundled with the AI Playbook for DJs.
-- [The AI Playbook for DJs](https://www.aifordjsglobal.com/playbook): 100 pages, 13 chapters, 30+ copy-paste prompts for DJ workflows: music discovery, production, live performance, business, and brand. $29.
-- [AI for DJs FAQ](https://www.aifordjsglobal.com/faq): Straight answers to 20 questions DJs ask about AI: finding music, mixing live, production, rights and ethics, and the business side.
-
 ## Blog
 - [Blog — AI for DJs Blog](https://www.aifordjsglobal.com/blog): AI DJ tools, workflows, hardware, stems, bookings, marketing, and business automation.
 - [AI DJ Workflows for Pioneer, Denon, and Rane](https://www.aifordjsglobal.com/blog/ai-dj-workflows-pioneer-denon-rane): Practical AI preparation and performance workflows for rekordbox, Engine DJ, Serato, stems, and modern DJ hardware.
