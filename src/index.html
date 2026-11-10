@@ -197,7 +197,10 @@
     </div>
     <p data-reveal style="color: var(--color-neutral-400); max-width: 54ch; margin: 0 0 var(--stack); font-size: 16px; line-height: 1.6;">Built for working DJs. Enter your email once to unlock the free tools. Get an answer, then get back to the music.</p>
 
-    <p style="margin:0 0 var(--stack)"><a class="btn btn-primary" href="/free-tools.html">Unlock the free tools</a></p>
+    <form id="tools-unlock" style="display:flex;flex-wrap:wrap;gap:12px;margin:0 0 var(--stack);max-width:560px">
+  <input type="email" name="email" required placeholder="Your email" aria-label="Email address" style="flex:1 1 240px;background:var(--color-bg);border:1px solid var(--color-neutral-800);border-radius:8px;color:inherit;padding:12px 16px;font:inherit;font-size:15px" />
+  <button class="btn btn-primary" type="submit" style="padding:12px 20px;font-size:14px">Unlock the free tools</button>
+</form>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1px; background: var(--color-neutral-800); border: 1px solid var(--color-neutral-800); border-radius: var(--radius-lg); overflow: hidden;">
       <a data-reveal data-tool href="Analyzer.dc.html" style="display: block; color: inherit; background: var(--color-bg); padding: var(--space-8); transition: background .3s ease;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--stack);">
@@ -295,6 +298,7 @@
 <p style="font-size:11px;letter-spacing:.18em;color:var(--color-accent)">03 · AI FOR DJS ACCELERATOR</p>
 <h2 style="font-family:var(--font-heading);font-weight:500;font-size:clamp(30px,4vw,56px);letter-spacing:-.035em">Your AI booking and content crew, live in 30 days</h2>
 <p style="font-size:clamp(18px,2vw,24px);line-height:1.6;max-width:52ch">A 30-day online program for working DJs. One step a day, at your own pace. No live class.</p>
+<p style="font-size:15px;line-height:1.65;color:var(--color-neutral-300);max-width:56ch">Inside: 28 lessons, the DJ AI Toolkit (Voice Note to Post, Autopost Scheduler, Inquiry Responder, Set to 10 Posts), the 100-page AI Playbook for DJs, and Ask Flip help under every lesson.</p>
 <a class="btn btn-primary" href="/accelerator">See the Accelerator, $150</a>
 <p style="font-size:13px;line-height:1.6;color:var(--color-neutral-400)">Online and self-paced. Start any time.</p>
 </div></section>
@@ -451,6 +455,16 @@ class Component extends DCLogic {
     }
   }
 }
+</script>
+<script>
+document.getElementById('tools-unlock').addEventListener('submit', function(e){
+  e.preventDefault();
+  var email = this.querySelector('input[name=email]').value.trim();
+  if(!email) return;
+  try { sessionStorage.setItem('afdj-signup-started','1'); sessionStorage.setItem('afdj-tools-next','/#tools'); } catch(_){}
+  document.cookie = 'afdj_signup_started=1; Path=/; Max-Age=1800; SameSite=Lax; Secure';
+  location.href = 'https://40y1ji.share-na2.hsforms.com/2KEjJVjRCRdC3O2sBQ5Rxdg?email=' + encodeURIComponent(email);
+});
 </script>
 </body>
 </html>
