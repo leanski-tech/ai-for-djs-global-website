@@ -27,6 +27,16 @@
       "destination": "/academy-waitlist.html",
       "permanent": false,
       "source": "/academy/"
+    },
+    {
+      "destination": "/lineage",
+      "permanent": true,
+      "source": "/about"
+    },
+    {
+      "destination": "/lineage",
+      "permanent": true,
+      "source": "/about/"
     }
   ],
   "rewrites": [
