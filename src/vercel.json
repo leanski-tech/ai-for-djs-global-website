@@ -159,6 +159,14 @@
     {
       "source": "/thank-you-accelerator/",
       "destination": "/thank-you-accelerator/index.html"
+    },
+    {
+      "source": "/agents",
+      "destination": "/agents/index.html"
+    },
+    {
+      "source": "/agents/",
+      "destination": "/agents/index.html"
     }
   ]
 }
